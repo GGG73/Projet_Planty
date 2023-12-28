@@ -1,0 +1,120 @@
+@import url('"https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap" rel="stylesheet"');
+
+
+/* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
+body {
+   font-family: 'Syne', sans-serif;
+   font-style: normal;
+   color: #000000;
+}
+
+/* On applique un noir sur les Titres */
+h1 {
+    color: #000000;
+    font-weight: 800;
+}
+/* On applique un noir sur les paragraphes */
+p {
+    color: #000000;
+    font-weight: 400;
+}
+
+/* HEADER */
+.logo {
+   padding-top: 31px;;
+   padding-left: 37px;
+}
+.logo .img {
+  height: 19px;
+  width: 201px;
+}
+
+.user_connect{
+   position: absolute;
+   width: 47px;
+   height: 19px;
+   z-index: 5;
+   color: #000000;
+   background:#FFFFFF;
+   padding:30px 25px;
+   margin-left: 1400px;
+}
+
+/*Height 80px!! Beug position menu...donc 180px pour afficher*/
+header{
+   top: 0;
+   width: 1440px;
+   height: 180px;
+   color:#000000;
+   text-align:center;
+   display: flex;
+   
+}
+
+.menu{
+   display: inline-block;
+
+}
+
+/*item 40 "Vous rencontrer"*/
+li.menu-item-40 {
+   color:#000000;
+   margin-left: 1597px;
+   padding:30px 25px;
+   display: inline-block; 
+   background-color: #FFFFFF;
+   text-align: center;
+}
+
+li.menu-item-40:hover,
+li.menu-item.current-menu-item-40 {
+   color: #000000;
+   background-color:#FFFFFF;
+   text-decoration: none;
+}
+
+/*item 39 "Commander" */
+li.menu-item-39 {
+   color:#FFFFFF;
+   display: inline-block;
+   margin-left: 1800px;
+   padding:30px 25px;
+   height: 80px;
+   background-color: #C02E44;
+   text-align: center;
+
+}
+
+li.menu-item-39:hover,
+li.menu-item.current-menu-item-39 {
+   color: #FFFFFF;
+   background-color:#DC9F96;
+   text-decoration: none;
+}
+
+/*FOOTER*/
+
+#site-footer {
+   padding: 20px;
+   height: 60;
+   font-weight: 400;
+   size: 16px;
+   text-align: center;
+   color: #000000;
+   background-color: #FFFFFF;
+}
+
+/*HOME*/
+
+
+
+
+/*NOUS RENCONTRER*/
+
+/* nf-form-content modifie aussi le formulaire de COMANDER !??*/
+.nf-form-content {
+   width: 383px;
+}
+
+/*COMMANDER*/
+
