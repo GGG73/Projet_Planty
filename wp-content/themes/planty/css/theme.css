@@ -1,5 +1,4 @@
-@import url('"https://fonts.googleapis.com/css2?family=Syne:wght@400;800&display=swap" rel="stylesheet"');
-
+ @import url('https://fonts.googleapis.com/css2?family=Syne:wght@500&display=swap');
 
 /* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
 body {
@@ -8,64 +7,59 @@ body {
    color: #000000;
 }
 
-/* On applique un noir sur les Titres */
-h1 {
-    color: #000000;
-    font-weight: 800;
-}
-/* On applique un noir sur les paragraphes */
-p {
-    color: #000000;
-    font-weight: 400;
-}
 
+/*************************************************/
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+/*************************************************/
 /* HEADER */
-.logo {
-   padding-top: 31px;;
-   padding-left: 37px;
-}
-.logo .img {
-  height: 19px;
-  width: 201px;
+
+
+#branding{
+   display: none;
 }
 
-.user_connect{
-   position: absolute;
-   width: 47px;
+.custom-logo {
+   width: 201px;
    height: 19px;
-   z-index: 5;
-   color: #000000;
-   background:#FFFFFF;
-   padding:30px 25px;
-   margin-left: 1400px;
+   margin-top: 31px;
+   margin-left: 37px;
+
+}
+.custom-logo-link{
+   width: 1440px;
+   height: 80px;
 }
 
-/*Height 80px!! Beug position menu...donc 180px pour afficher*/
+#menu-item-513 > a:nth-child(1) > span:nth-child(1){
+   margin-left: 1000px;
+   background-color: #DC9F96;
+
+}
+/*************************************************/
+/*Header format*/
 header{
    top: 0;
    width: 1440px;
-   height: 180px;
-   color:#000000;
-   text-align:center;
-   display: flex;
-   
-}
-
-.menu{
-   display: inline-block;
+   margin-left: auto;
+   margin-right: auto;
 
 }
 
-/*item 40 "Vous rencontrer"*/
+/*************************************************/
+/*Menu boutons*/
+/*Bouton "Vous rencontrer"*/
 li.menu-item-40 {
+   width: 200px;
+   height: 40px;
+   margin-left: 1100px;
    color:#000000;
-   margin-left: 1597px;
-   padding:30px 25px;
+   padding: 30px 25px;
    display: inline-block; 
-   background-color: #FFFFFF;
+   background-color: #a47d7d;
    text-align: center;
 }
 
+/*Bouton Interrieur  "Vous rencontrer"*/
 li.menu-item-40:hover,
 li.menu-item.current-menu-item-40 {
    color: #000000;
@@ -73,18 +67,19 @@ li.menu-item.current-menu-item-40 {
    text-decoration: none;
 }
 
-/*item 39 "Commander" */
+/*Bouton "Commander" */
 li.menu-item-39 {
    color:#FFFFFF;
    display: inline-block;
-   margin-left: 1800px;
-   padding:30px 25px;
-   height: 80px;
+   margin-left: 1300px;
+   padding: 30px 25px;
+   height: 40px;
    background-color: #C02E44;
    text-align: center;
 
 }
 
+/*Bouton Interrieur "Vous rencontrer"*/
 li.menu-item-39:hover,
 li.menu-item.current-menu-item-39 {
    color: #FFFFFF;
@@ -92,29 +87,743 @@ li.menu-item.current-menu-item-39 {
    text-decoration: none;
 }
 
+
+/*************************************************/
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+/*************************************************/
 /*FOOTER*/
 
 #site-footer {
+   width: 1440px;
+   margin-left: auto;
+   margin-right: auto;
    padding: 20px;
-   height: 60;
+   height: 60px;
    font-weight: 400;
-   size: 16px;
+   font-size: 16px;
    text-align: center;
    color: #000000;
    background-color: #FFFFFF;
 }
 
+
+/*************************************************/
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+/*************************************************/
 /*HOME*/
-
-
-
-
-/*NOUS RENCONTRER*/
-
-/* nf-form-content modifie aussi le formulaire de COMANDER !??*/
-.nf-form-content {
-   width: 383px;
+/*Conteneur Page complete*/
+.elementor-element-b36a5ed{
+   width: 1440px;
+   height: 950px;
 }
 
+/*Titre Principal "Boisson énergisante"*/
+h1.elementor-heading-title:nth-child(2){
+   width: 100%;
+   margin-left: 180px;
+   margin-top: 50px;
+}
+
+/*Titre Principal "100% naturelle"*/
+.elementor-element-690c68d{
+   width: 100%;
+   margin-left: -200px;
+   height: 90px;
+}
+.elementor-element-690c68d > div:nth-child(1){
+   width: 1440px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/*************************************************/
+img.attachment-2048x2048:nth-child(2){
+   width: 100%;
+ 
+}
+/*Image principal feuille gauche Planty*/
+.elementor-element-90142b3{
+   width: 100%;
+}
+/*Image principal canette Planty*/
+.elementor-element-1d92cf2{
+   width: 100%;
+
+}
+/*Image principal feuille droite Planty*/
+.elementor-element-9de8589 > div:nth-child(1){
+   width: 100%;
+
+}
+
+
+
+
+
+
+/*Conteneur "L'énergie des plantes"*/
+.elementor-element-cd1e9d8{
+   width: 1440px;
+   height: 415px;
+}
+
+
+
+
+
+
+
+
+
+/*Conteneur "Ce qu'ils pensent"*/
+.elementor-element-19732f8{
+   width: 1440px;
+   height: 638px;
+
+}
+
+/*Titre "Ce qu'ils pensent"*/
+.elementor-element-6e25574{
+   width: 582px;
+   height: 36px;
+   margin-right: auto;
+   margin-left: auto;
+   margin-top: 150px;
+}
+
+/*Conteneur "Ce qu'ils pensent" 3 Photos Fathia Véro et Marc*/
+.elementor-element-bec3921{
+   width: 100%;
+   height: 376px;
+   margin-top: 120px; 
+}
+
+
+/*************************************************/
+
+/*Conteneur Image Fathia*/
+.elementor-element-552726d
+/* Image Fathia*/
+.elementor-element-4ff51dd{
+   width: 126.28px;
+   height: 139px;
+   margin-left: 132px;
+}
+/*OU Image Fathia*/
+.elementor-element-4ff51dd > div:nth-child(1)
+/*OU Image Fathia*/
+.wp-image-30
+
+/*Conteneur Titre+Texte Fathia*/
+.elementor-element-388ff18
+/*Conteneur Titre Fathia*/
+.elementor-element-262cbdd
+/*Titre Fathia*/
+.elementor-element-262cbdd > div:nth-child(1)
+/*Conteneur Texte Fathia*/
+.elementor-element-b83191a
+/*Texte Fathia*/
+.elementor-element-b83191a > div:nth-child(1)
+
+/*************************************************/
+
+/*Conteneur Image Véro*/
+.elementor-element-6628bd7{
+   width: 126.28px;
+   height: 139px;
+}
+/* Image Véro*/
+.img:nth-child(1)
+/*OU Image Véro*/
+.elementor-element-3714bf2 > div:nth-child(1)
+/*OU Image Fathia*/
+.wp-image-31
+
+/*Conteneur Titre+Texte Véro*/
+.elementor-element-db2fc8a
+/*Conteneur Titre Véro*/
+.elementor-element-1930ccc
+/*Titre Véro*/
+.elementor-element-1930ccc > div:nth-child(1)
+/*Conteneur Texte Véro*/
+.elementor-element-9ecfe42
+/*Texte Véro*/
+.elementor-element-9ecfe42 > div:nth-child(1)
+
+
+/*************************************************/
+
+/*Conteneur Image Marc*/
+.elementor-element-5d0c627
+/* Image Marc*/
+.elementor-element-ad1a9dd
+/*OU Image Marc*/
+.elementor-element-ad1a9dd > div:nth-child(2)
+/*OU Image Marc*/
+.wp-image-32{
+   width: 126.28px;
+   height: 139px;
+   margin-left: 960px;
+}
+
+
+/*Conteneur Titre+Texte Marc*/
+.elementor-element-96935f2
+/*Conteneur Titre Marc*/
+.elementor-element-4608955
+/*Titre Marc*/
+.elementor-element-4608955 > div:nth-child(2)
+/*Conteneur Texte Marc*/
+.elementor-element-ac6dcd1
+/*Texte Marc*/
+.elementor-element-ac6dcd1 > div:nth-child(2)
+
+
+
+
+/*************************************************/
+
+/*Conteneur bannière canettes*/
+.elementor-element-6f4f3f2{
+   width: 1440px;
+   height: 262px;
+ 
+}
+
+/*Image banière canettes*/
+.elementor-element-d166689{
+   width: 1440px;
+   height: 262px;
+}
+
+.elementor-element-d166689 > div:nth-child(1)
+
+.elementor-element-d166689 > div:nth-child(1) > img:nth-child(1){
+   width: 1440px;
+   height: 262px;
+}
+
+
+/*************************************************/
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+/*************************************************/
+/*NOUS RENCONTRER*/
+/*Conteneur Page complete*/
+.elementor{
+   margin-left: auto;
+   margin-right: auto;
+   width: 1440px;
+   height: 1854px;
+}
+
+
+.elementor-element-6a237c0 > div:nth-child(1) > img:nth-child(2){
+   margin-top: 81px;
+   margin-left: 184.2px;
+   width: 145.3px;
+   height: 150.26px;
+}
+
+/*Conteneur fleur 20%*/
+.elementor-element-a53cb48{
+   width: 20%;
+}
+/*Conteneur élément TITRE TEXTE IMAGE*/
+.elementor-element-6b542e9{
+   width: 1440px;
+   height: 415px;
+}
+
+/*Conteneur élément TITRE TEXTE 80%*/
+.elementor-element-8d7b988{
+   width: 80%;
+}
+
+
+/*Titre Principal "Nous renconter"*/
+.elementor-element-986747e > div:nth-child(1){
+   width: 680px;
+   height: 46px;
+   margin-top: 186px;
+   margin-left: -80px;
+}
+
+/*Texte Principal "Nous renconter"*/
+.elementor-element-4baf497 {
+   width: 669px;
+   height: 72px;
+   margin-left: 98px;
+}
+
+/*Image fleur rotation -70°*/
+img.attachment-thumbnail:nth-child(2){
+   margin-top: 71px;
+   margin-left: 284.2px;
+   rotate: -70deg;
+   width: 145.3px;
+   height: 150.26px;
+   
+}
+
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+/*L'équipe*/
+/*Conteneur de l'équipe*/
+.elementor-element-0875e95{
+   width: 1440px;
+   height: 554px;
+}
+
+
+/*************************************************/
+/*Conteneur Mégane*/
+.elementor-element-efecd6f{
+   width: 33.33%;
+}
+
+/*Conteneur Photo Mégane*/
+.elementor-element-4e4c3fc{
+   width: 100%;
+   height: 100%;
+}
+/*Photo Mégane*/
+.elementor-element-4e4c3fc > div:nth-child(1){
+   width: 167px;
+   height: 167px;
+   margin-left: 312px;
+   margin-top: 228px;
+}
+
+/*Prenom Mégane*/
+.elementor-element-e7fcd18 {
+   margin-left: 350px;
+}
+
+/*Métier Mégane*/
+.elementor-element-0b61450 > div:nth-child(1){
+   margin-left: 350px;
+}
+
+
+/*************************************************/
+/*Conteneur Brooke*/
+.elementor-element-9a12d0d{
+   width: 33.33%;
+}
+
+/*Conteneur TITRE L'EQUIPE dans conteneur Brooke*/
+.elementor-element-62a7a90 > div:nth-child(1){
+   margin-top: 140px;
+}
+
+/*Conteneur Photo Brooke*/
+.elementor-element-bb24a9d{
+   width: 100%;
+   height: 100%;
+}
+
+/*Photo Brooke*/
+.elementor-element-bb24a9d > div:nth-child(1){
+   width: 167px;
+   height: 167px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 28px;
+}
+
+/*Prenom Brooke*/
+.elementor-element-224a4a4 > div:nth-child(1){
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/*Métier Brooke*/
+.elementor-element-c9caef5 > div:nth-child(1){
+   margin-left: auto;
+   margin-right: auto;
+}
+
+
+/*************************************************/
+/*Conteneur Sylvie*/
+.elementor-element-2ba26f8{
+   width: 33.33%;
+}
+
+/*Conteneur Photo Sylvie*/
+.elementor-element-ddf0f56{
+   width: 100%;
+   height: 100%;
+}
+
+/*Photo Sylvie*/
+.elementor-element-ddf0f56 > div:nth-child(1) > img:nth-child(1){
+   width: 167px;
+   height: 167px;
+   margin-left: -312px ;
+   margin-top: 228px;
+}
+
+/*Prenom Sylvie*/
+.elementor-element-28cb18f > div:nth-child(1){
+   margin-left: -312px ;
+}
+
+/*Métier Sylvie*/
+.elementor-element-3e37fbc > div:nth-child(1){
+   margin-left: -312px ;
+}
+
+/*************************************************/
+/*Feuille verte*/
+.elementor-element-1ebb1bb{
+   width: 100%;
+   height: 100%;
+}
+
+/*Feuille verte image*/
+.elementor-element-1ebb1bb > div:nth-child(1) > img:nth-child(1){
+   width: 191.21px;
+   height: 219.08px;
+   margin-top: 30px;
+   margin-left: 1050px;
+}
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+/*SECTION FORMULAIRE DE CONTACT*/
+/*Conteneur du formulaire*/
+.elementor-element-ee4fdbf{
+   width: 1440px;
+   background-color: #E0B9B4;
+}
+
+/*FORMULAIRE COMPLET (Nom Email Message Bouton)*/
+.elementor-element-968e99b{
+width: 1440px;
+z-index: 2;
+}
+
+
+/*************************************************/
+/*Formulaire contact*/
+/*"Titre principal" formulaire contact "Nous contacter"*/
+h1.elementor-heading-title:nth-child(1){
+   margin-left: 591px;
+   width: 256px;
+   height: 36px;
+}
+
+
+/*************************************************/
+/*Formulaire contact*/
+/*Supprimer info titre du formulaire "Nous contacter"*/
+.nf-form-title{
+   display: none;
+}
+/*Supprimer info champs obligatoire * des formulaire "nous contacter" et "commander"*/
+.nf-form-fields-required{
+   display: none;
+}
+
+/*Supprimer mes étoile * champs obligatoire des formulaires "nous contacter" et "commander"*/
+.ninja-forms-req-symbol{
+   display: none;
+}
+
+
+/*************************************************/
+/*Formulaire contact*/
+/*"Nom" formulaire "Nous contacter"*/
+#nf-label-field-5{
+   margin-left: 529px;
+}
+/*Conteneur ecriture "Nom" (Blanc) formulaire "Nous contacter"*/
+#nf-field-5{
+   margin-left: 529px;
+   width: 383px;
+   height: 71px;
+}
+
+/*"Email" formulaire "Nous contacter"*/
+#nf-label-field-6{
+   margin-left: 529px;
+}
+/*"Conteneur ecriture Email" (Blanc) formulaire "Nous contacter"*/
+#nf-field-6{
+   margin-left: 529px;
+   width: 383px;
+   height: 71px;
+}
+
+/*"Message" formulaire "Nous contacter"*/
+#nf-field-7-wrap > div:nth-child(1){
+   margin-left: 529px;
+}
+/*Conteneur ecriture "Message" (Blanc) formulaire "Nous contacter"*/
+#nf-field-7{
+   margin-left: 529px;
+   width: 383px;
+   height: 237px;
+}
+
+/*Bouton Envoyer formulaire "Nous contacter"*/
+#nf-field-8{
+   margin-left: 621px;
+   width: 198px;
+   height: 55px;
+   background-color: #E0B9B4;
+   color: #FFFFFF;
+   border-radius: 5px;
+   margin-left: 621px;
+}
+
+
+/*************************************************/
+/*Formulaire contact*/
+/*Image plante formulaire "Nous contacter"*/
+.elementor-element-6647cc0 > div:nth-child(1) > img:nth-child(1){
+   margin-left: 172px;
+   margin-top: 545px;
+   width: 147.32px;
+   height: 134.97px;
+   z-index: 1;
+}
+
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+/*Conteneur pied de page banniere cannette*/
+.elementor-element-04c5920{
+   width: 1440px;
+   height: 172px;
+
+}
+.elementor-element-e87b8a2{
+   width: 1440px;
+   height: 172px;
+}
+
+/*Cannettes image banniere*/
+.elementor-element-e87b8a2 > div:nth-child(1) > img:nth-child(1){
+   width: 1440px;
+   height: 172px;
+ 
+}
+
+/*************************************************/
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+/*************************************************/
 /*COMMANDER*/
+/*Conteneur Page complète "COMMANDER"*/
+.elementor-element-e5074e4{
+   width: 1440px;
+   height: 1372px;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+/*Conteneur Titre */
+.elementor-element-57eeb55 > div:nth-child(1){
+   width: 680px;
+   height: 46px;
+   margin-top: 69px;
+   margin-left: 220px;
+}
+
+/*Conteneur 1er séparateur horizontal*/
+div.elementor-divider:nth-child(2){
+   width: 860px;
+   margin-top: 69px;
+   margin-left: 292px;
+}
+  
+/*Titre 2 "votre commande"*/
+div.elementor-element:nth-child(5){
+   width: 290px;
+   height: 36px;
+   margin-top: 10px;
+   margin-left: 292px;
+}
+
+
+/*************************************************/
+/*Formulaire "Commander"*/
+/*Supprimer affichage libellé "votre commande"*/
+#nf-label-field-13{
+   display: none;
+}
+
+/*Conteneur*/
+#nf-field-13-container > div:nth-child(2){
+   width: 100%;
+   height: 128.36px;
+}
+
+/*Conteneur des 4 images*/
+#nf-field-13-wrap > div:nth-child(2){
+   width: 860px;
+   height: 128px;
+   margin-left: 292px;
+
+}
+
+/*Conteneur images fraise*/
+#nf-label-field-13-0{
+   width: 192.53px;
+   height: 128.36px;
+}
+
+/*Conteneur images pamplemousse*/
+#nf-label-field-13-1{
+   width: 192.53px;
+   height: 128.36px;
+}
+
+/*Conteneur images framboise*/
+#nf-label-field-13-2{
+   width: 192.53px;
+   height: 128.36px;
+}
+
+/*Conteneur images citron*/
+#nf-label-field-13-3{
+   width: 192.53px;
+   height: 128.36px;
+}
+
+/*Conteneur input fraise*/
+#nf-field-23{
+   width: 39px;
+   height: 56px;
+   margin-left: 368px;
+}
+
+/*Conteneur input plamplemousse*/
+#nf-field-24{
+   width: 39px;
+   height: 56px;
+   margin-left: 587px;
+}
+
+/*Conteneur input framboise*/
+#nf-field-25{
+   width: 39px;
+   height: 56px;
+   margin-left: 813px;
+}
+
+/*Conteneur input citron*/
+#nf-field-26{
+   width: 39px;
+   height: 56px;
+   margin-left: 1040px;
+}
+
+/*Séparateur horizontal blanc 1px*/
+
+
+/*************************************************/
+/*Formulaire gauche */
+/*Titre "Vos informations"*/
+
+
+/*Texte "Nom"*/
+#nf-label-field-14{
+   color: #FFFFFF;
+   margin-left: 292px;
+}
+
+/*Formulaire à remplir "Nom"*/
+#nf-field-14{
+   width: 383px;
+   height: 71px;
+   margin-left: 292px;
+   border-radius: 7px;
+}
+
+/*Texte "Prénom"*/
+#nf-label-field-15{
+   color: #FFFFFF;
+   margin-left: 292px;
+}
+
+/*Formulaire à remplir "Prénom"*/
+#nf-field-15{
+   width: 383px;
+   height: 71px;
+   margin-left: 292px;
+   border-radius: 7px;
+}
+
+/*Texte "E-mail"*/
+#nf-label-field-16{
+   color: #FFFFFF;
+   margin-left: 292px;
+}
+
+/*Formulaire à remplir "E-mail"*/
+#nf-field-16{
+   width: 383px;
+   height: 71px;
+   margin-left: 292px;
+   border-radius: 7px;
+}
+
+/*Séparateur vertical blanc 1px*/
+
+
+
+/*************************************************/
+/*Formulaire droit*/
+/*Titre "Livraison"*/
+
+/*Texte "Adresse de livraison"*/
+#nf-label-field-17{
+   color: #FFFFFF;
+   margin-left: 764px;
+}
+
+/*Formulaire à remplir "Adresse de livraison"*/
+#nf-field-17{
+   width: 383px;
+   height: 71px;
+   margin-left: 764px;
+   border-radius: 7px;
+}
+
+/*Texte "Code postal"*/
+#nf-label-field-18{
+   color: #FFFFFF;
+   margin-left: 764px;
+}
+
+/*Formulaire à remplir "Code postal"*/
+#nf-field-18{
+   width: 383px;
+   height: 71px;
+   margin-left: 764px;
+   border-radius: 7px;
+}
+
+/*Texte "Ville"*/
+#nf-label-field-19{
+   color: #FFFFFF;
+   margin-left: 764px;
+}
+/*Formulaire à remplir "Ville"*/
+#nf-field-19{
+   width: 383px;
+   height: 71px;
+   margin-left: 764px;
+   border-radius: 7px;
+}
+
+
+/*Bouton COMMANDER"*/
+#nf-field-20{
+   width: 198px;
+   height: 55px;
+   border-radius: 5px;
+   background-color: #E0B9B4;
+   margin-left: 631px;
+}
 
