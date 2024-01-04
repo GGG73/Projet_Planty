@@ -1,10 +1,9 @@
- @import url('https://fonts.googleapis.com/css2?family=Syne:wght@500&display=swap');
-
-/* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
 body {
    font-family: 'Syne', sans-serif;
    font-style: normal;
    color: #000000;
+   max-width: 1440px;
+   margin: auto;
 }
 
 
@@ -94,7 +93,7 @@ li.menu-item.current-menu-item-39 {
 /*FOOTER*/
 
 #site-footer {
-   width: 1440px;
+   width: 100%px;
    margin-left: auto;
    margin-right: auto;
    padding: 20px;

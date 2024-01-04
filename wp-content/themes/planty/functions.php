@@ -14,23 +14,26 @@ function theme_enqueue_styles()
     // Fonction pour LOGO dans le header 
 add_theme_support( 'custom-logo' );
 ?>
-<?php
-     // Fonction double Menu
-     register_nav_menus( array(
-          'primary'   => __( 'Primary Menu', 'planty' ),
-          'secondary' => __( 'Secondary Menu', 'planty' )
-      ) );
-?>
 
 <?php 
      // Fonction pour modifier les éléments du menu
  function modifier_menu_pour_utilisateur_connecte($items, $args) {
     // Vérifier si l'utilisateur est connecté
-    if (is_user_logged_in() && $args->theme_location == 'http://localhost/Planty/wp-admin/index.php') {
+    if (is_user_logged_in() && $args->theme_location == 'main-menu') {
         // Ajouter le lien vers l'admin WordPress
-        $items .= '<li><a href="' . admin_url() . '">Admin</a></li>';
+        $items .= '<li><a href="' . get_admin_url() . '">Admin</a></li>';
     }
     return $items;
 }
 add_filter('wp_nav_menu_items', 'modifier_menu_pour_utilisateur_connecte', 10, 2);
 ?>
+
+
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Syne:wght@500;600&display=swap');
+</style>
+
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600&display=swap" rel="stylesheet">
