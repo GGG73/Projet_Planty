@@ -1,3 +1,5 @@
+/*CSS****HEADER*FOOTER*HOME*NOUS RENCONTRER*COMMANDER**/
+
 body {
    font-family: 'Syne', sans-serif;
    font-style: normal;
@@ -5,106 +7,114 @@ body {
    max-width: 1440px;
    margin: auto;
 }
+/* ?? #wrapper ?? */
 
 
 /*************************************************/
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*************************************************/
-/* HEADER */
+/*HEADER*/
+/*Header format position, menu en ligne*/
+#header{
+   top: 0;
+   max-width: 1440px;
+   margin: auto;
+   display: flex;
+   flex-direction: row;
+}
 
-
+/*Supprimer visuel ...*/
 #branding{
    display: none;
 }
 
+/*Format position logo Planty*/
 .custom-logo {
-   width: 201px;
-   height: 19px;
-   margin-top: 31px;
-   margin-left: 37px;
-
-}
-.custom-logo-link{
-   width: 1440px;
+   width: 100%;
    height: 80px;
+   margin-left: 31px;
 }
 
-#menu-item-513 > a:nth-child(1) > span:nth-child(1){
-   margin-left: 1000px;
-   background-color: #DC9F96;
-
-}
-/*************************************************/
-/*Header format*/
-header{
-   top: 0;
-   width: 1440px;
-   margin-left: auto;
-   margin-right: auto;
-
+/*Menu en ligne*/
+#menu-menu-principale{
+   display: flex;
+   max-width: 1440px;
+   margin: auto;
 }
 
 /*************************************************/
 /*Menu boutons*/
+
 /*Bouton "Vous rencontrer"*/
 li.menu-item-40 {
    width: 200px;
-   height: 40px;
-   margin-left: 1100px;
-   color:#000000;
-   padding: 30px 25px;
+   height: 80px;
+   margin-left: 650px;
+   margin-right: -150px;
+   padding: 30px 15px;
    display: inline-block; 
-   background-color: #a47d7d;
    text-align: center;
-}
-
-/*Bouton Interrieur  "Vous rencontrer"*/
-li.menu-item-40:hover,
-li.menu-item.current-menu-item-40 {
-   color: #000000;
-   background-color:#FFFFFF;
-   text-decoration: none;
 }
 
 /*Bouton "Commander" */
 li.menu-item-39 {
-   color:#FFFFFF;
-   display: inline-block;
-   margin-left: 1300px;
+   width: 200px;
+   height: 80px;
+   margin-left: 308px;
    padding: 30px 25px;
-   height: 40px;
-   background-color: #C02E44;
+   display: inline-block;
    text-align: center;
-
-}
-
-/*Bouton Interrieur "Vous rencontrer"*/
-li.menu-item-39:hover,
-li.menu-item.current-menu-item-39 {
+   background-color: #C02E44;
    color: #FFFFFF;
-   background-color:#DC9F96;
-   text-decoration: none;
+   border: none;
 }
 
+li.menu-item-39 :hover{
+   width: 200px;
+   height: 80px;
+   margin-left: 308px;
+   padding: 30px 25px;
+   display: inline-block;
+   text-align: center;
+   background-color: #DC9F96;
+   color: #FFFFFF;
+   border: none;  
+}
+
+
+/*Bouton Admin*/
+#menu-menu-principale > li:nth-child(3) > a:nth-child(1){
+   width: 200px;
+   height: 80px;
+   margin-left: -400px;
+   color:#000000;
+   padding: 30px 15px;
+   display: inline-block; 
+   background-color: #FFFFFF;
+   text-align: center;
+   
+}
 
 /*************************************************/
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*************************************************/
 /*FOOTER*/
-
+/*Footer beug page acceuil....*/
 #site-footer {
-   width: 100%px;
-   margin-left: auto;
-   margin-right: auto;
+   width: 100%;
+   margin: auto;
    padding: 20px;
    height: 60px;
    font-weight: 400;
    font-size: 16px;
+   font-family: 'Syne', sans-serif;
    text-align: center;
    color: #000000;
    background-color: #FFFFFF;
+   margin-bottom: auto;
 }
-
+#site-footer > a:nth-child(1)
+#site-footer > a:nth-child(1) > p:nth-child(1)
 
 /*************************************************/
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
@@ -131,8 +141,7 @@ h1.elementor-heading-title:nth-child(2){
 }
 .elementor-element-690c68d > div:nth-child(1){
    width: 1440px;
-   margin-left: auto;
-   margin-right: auto;
+   margin: auto;
 }
 
 /*************************************************/
@@ -185,8 +194,7 @@ img.attachment-2048x2048:nth-child(2){
 .elementor-element-6e25574{
    width: 582px;
    height: 36px;
-   margin-right: auto;
-   margin-left: auto;
+   margin: auto;
    margin-top: 150px;
 }
 
@@ -309,8 +317,7 @@ img.attachment-2048x2048:nth-child(2){
 /*NOUS RENCONTRER*/
 /*Conteneur Page complete*/
 .elementor{
-   margin-left: auto;
-   margin-right: auto;
+   margin: auto;
    width: 1440px;
    height: 1854px;
 }
@@ -356,9 +363,9 @@ img.attachment-2048x2048:nth-child(2){
 
 /*Image fleur rotation -70°*/
 img.attachment-thumbnail:nth-child(2){
-   margin-top: 71px;
+   margin-top: 151px;
    margin-left: 284.2px;
-   rotate: -70deg;
+   rotate: 290;
    width: 145.3px;
    height: 150.26px;
    
@@ -425,21 +432,18 @@ img.attachment-thumbnail:nth-child(2){
 .elementor-element-bb24a9d > div:nth-child(1){
    width: 167px;
    height: 167px;
-   margin-left: auto;
-   margin-right: auto;
+   margin: auto;
    margin-top: 28px;
 }
 
 /*Prenom Brooke*/
 .elementor-element-224a4a4 > div:nth-child(1){
-   margin-left: auto;
-   margin-right: auto;
+   margin: auto;
 }
 
 /*Métier Brooke*/
 .elementor-element-c9caef5 > div:nth-child(1){
-   margin-left: auto;
-   margin-right: auto;
+   margin: auto;
 }
 
 
@@ -613,216 +617,3 @@ h1.elementor-heading-title:nth-child(1){
 /*************************************************/
 /*COMMANDER*/
 /*Conteneur Page complète "COMMANDER"*/
-.elementor-element-e5074e4{
-   width: 1440px;
-   height: 1372px;
-   margin-right: auto;
-   margin-left: auto;
-}
-
-/*Conteneur Titre */
-.elementor-element-57eeb55 > div:nth-child(1){
-   width: 680px;
-   height: 46px;
-   margin-top: 69px;
-   margin-left: 220px;
-}
-
-/*Conteneur 1er séparateur horizontal*/
-div.elementor-divider:nth-child(2){
-   width: 860px;
-   margin-top: 69px;
-   margin-left: 292px;
-}
-  
-/*Titre 2 "votre commande"*/
-div.elementor-element:nth-child(5){
-   width: 290px;
-   height: 36px;
-   margin-top: 10px;
-   margin-left: 292px;
-}
-
-
-/*************************************************/
-/*Formulaire "Commander"*/
-/*Supprimer affichage libellé "votre commande"*/
-#nf-label-field-13{
-   display: none;
-}
-
-/*Conteneur*/
-#nf-field-13-container > div:nth-child(2){
-   width: 100%;
-   height: 128.36px;
-}
-
-/*Conteneur des 4 images*/
-#nf-field-13-wrap > div:nth-child(2){
-   width: 860px;
-   height: 128px;
-   margin-left: 292px;
-
-}
-
-/*Conteneur images fraise*/
-#nf-label-field-13-0{
-   width: 192.53px;
-   height: 128.36px;
-}
-
-/*Conteneur images pamplemousse*/
-#nf-label-field-13-1{
-   width: 192.53px;
-   height: 128.36px;
-}
-
-/*Conteneur images framboise*/
-#nf-label-field-13-2{
-   width: 192.53px;
-   height: 128.36px;
-}
-
-/*Conteneur images citron*/
-#nf-label-field-13-3{
-   width: 192.53px;
-   height: 128.36px;
-}
-
-/*Conteneur input fraise*/
-#nf-field-23{
-   width: 39px;
-   height: 56px;
-   margin-left: 368px;
-}
-
-/*Conteneur input plamplemousse*/
-#nf-field-24{
-   width: 39px;
-   height: 56px;
-   margin-left: 587px;
-}
-
-/*Conteneur input framboise*/
-#nf-field-25{
-   width: 39px;
-   height: 56px;
-   margin-left: 813px;
-}
-
-/*Conteneur input citron*/
-#nf-field-26{
-   width: 39px;
-   height: 56px;
-   margin-left: 1040px;
-}
-
-/*Séparateur horizontal blanc 1px*/
-
-
-/*************************************************/
-/*Formulaire gauche */
-/*Titre "Vos informations"*/
-
-
-/*Texte "Nom"*/
-#nf-label-field-14{
-   color: #FFFFFF;
-   margin-left: 292px;
-}
-
-/*Formulaire à remplir "Nom"*/
-#nf-field-14{
-   width: 383px;
-   height: 71px;
-   margin-left: 292px;
-   border-radius: 7px;
-}
-
-/*Texte "Prénom"*/
-#nf-label-field-15{
-   color: #FFFFFF;
-   margin-left: 292px;
-}
-
-/*Formulaire à remplir "Prénom"*/
-#nf-field-15{
-   width: 383px;
-   height: 71px;
-   margin-left: 292px;
-   border-radius: 7px;
-}
-
-/*Texte "E-mail"*/
-#nf-label-field-16{
-   color: #FFFFFF;
-   margin-left: 292px;
-}
-
-/*Formulaire à remplir "E-mail"*/
-#nf-field-16{
-   width: 383px;
-   height: 71px;
-   margin-left: 292px;
-   border-radius: 7px;
-}
-
-/*Séparateur vertical blanc 1px*/
-
-
-
-/*************************************************/
-/*Formulaire droit*/
-/*Titre "Livraison"*/
-
-/*Texte "Adresse de livraison"*/
-#nf-label-field-17{
-   color: #FFFFFF;
-   margin-left: 764px;
-}
-
-/*Formulaire à remplir "Adresse de livraison"*/
-#nf-field-17{
-   width: 383px;
-   height: 71px;
-   margin-left: 764px;
-   border-radius: 7px;
-}
-
-/*Texte "Code postal"*/
-#nf-label-field-18{
-   color: #FFFFFF;
-   margin-left: 764px;
-}
-
-/*Formulaire à remplir "Code postal"*/
-#nf-field-18{
-   width: 383px;
-   height: 71px;
-   margin-left: 764px;
-   border-radius: 7px;
-}
-
-/*Texte "Ville"*/
-#nf-label-field-19{
-   color: #FFFFFF;
-   margin-left: 764px;
-}
-/*Formulaire à remplir "Ville"*/
-#nf-field-19{
-   width: 383px;
-   height: 71px;
-   margin-left: 764px;
-   border-radius: 7px;
-}
-
-
-/*Bouton COMMANDER"*/
-#nf-field-20{
-   width: 198px;
-   height: 55px;
-   border-radius: 5px;
-   background-color: #E0B9B4;
-   margin-left: 631px;
-}
-
