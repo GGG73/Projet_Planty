@@ -1,14 +1,42 @@
 /*CSS****HEADER*FOOTER*HOME*NOUS RENCONTRER*COMMANDER**/
 
 body {
-   font-family: 'Syne', sans-serif;
+   
    font-style: normal;
    color: #000000;
    max-width: 1440px;
    margin: auto;
 }
-/* ?? #wrapper ?? */
 
+h1{
+   font-family: 'Syne', sans-serif;
+   font-weight: 800;
+   font-size: 38px;
+   line-height: 45.6px;
+   color: #FFFFFF;
+}
+
+h2{
+   font-family: 'Syne', sans-serif;
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 36px;
+   color: #FFFFFF;
+}
+
+p{
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+   color: #FFFFFF;
+}
+
+/* ?? #wrapper ?? */
+#wrapper{
+   width: 100%;
+   height: auto;
+}
 
 /*************************************************/
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
@@ -17,7 +45,7 @@ body {
 /*Header format position, menu en ligne*/
 #header{
    top: 0;
-   max-width: 1440px;
+   max-width: 100%;
    margin: auto;
    display: flex;
    flex-direction: row;
@@ -38,7 +66,7 @@ body {
 /*Menu en ligne*/
 #menu-menu-principale{
    display: flex;
-   max-width: 1440px;
+   max-width: 100%;
    margin: auto;
 }
 
@@ -56,20 +84,8 @@ li.menu-item-40 {
    text-align: center;
 }
 
-/*Bouton "Commander" */
+/*Bouton "Commander"*/
 li.menu-item-39 {
-   width: 200px;
-   height: 80px;
-   margin-left: 308px;
-   padding: 30px 25px;
-   display: inline-block;
-   text-align: center;
-   background-color: #C02E44;
-   color: #FFFFFF;
-   border: none;
-}
-
-li.menu-item-39 :hover{
    width: 200px;
    height: 80px;
    margin-left: 308px;
@@ -78,7 +94,12 @@ li.menu-item-39 :hover{
    text-align: center;
    background-color: #DC9F96;
    color: #FFFFFF;
-   border: none;  
+   border: none;
+}
+
+/*Bouton "Commander" survol de la souris*/
+li.menu-item-39:hover{
+   background-color: #C02E44;
 }
 
 
@@ -99,22 +120,30 @@ li.menu-item-39 :hover{
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*************************************************/
 /*FOOTER*/
-/*Footer beug page acceuil....*/
-#site-footer {
-   width: 100%;
-   margin: auto;
+/*Footer Couleurs...*/
+#site-footer > a:nth-child(1) > p:nth-child(1){
+   color: #000000;
+   background-color: #FFFFFF;
    padding: 20px;
    height: 60px;
    font-weight: 400;
    font-size: 16px;
    font-family: 'Syne', sans-serif;
    text-align: center;
-   color: #000000;
-   background-color: #FFFFFF;
+}
+
+/*Conteneur Footer*/
+#site-footer {
+   width: 100%;
+   margin: auto;
    margin-bottom: auto;
 }
-#site-footer > a:nth-child(1)
-#site-footer > a:nth-child(1) > p:nth-child(1)
+
+/*Balise??*/
+#site-footer > a:nth-child(1){
+   z-index: 2;
+}
+
 
 /*************************************************/
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
@@ -122,7 +151,7 @@ li.menu-item-39 :hover{
 /*HOME*/
 /*Conteneur Page complete*/
 .elementor-element-b36a5ed{
-   width: 1440px;
+   width: 100%;
    height: 950px;
 }
 
@@ -140,7 +169,7 @@ h1.elementor-heading-title:nth-child(2){
    height: 90px;
 }
 .elementor-element-690c68d > div:nth-child(1){
-   width: 1440px;
+   width: 100%;
    margin: auto;
 }
 
@@ -167,25 +196,17 @@ img.attachment-2048x2048:nth-child(2){
 
 
 
-
-
 /*Conteneur "L'énergie des plantes"*/
 .elementor-element-cd1e9d8{
-   width: 1440px;
+   width: 100%;
    height: 415px;
 }
 
 
 
-
-
-
-
-
-
 /*Conteneur "Ce qu'ils pensent"*/
 .elementor-element-19732f8{
-   width: 1440px;
+   width: 100%;
    height: 638px;
 
 }
@@ -292,21 +313,21 @@ img.attachment-2048x2048:nth-child(2){
 
 /*Conteneur bannière canettes*/
 .elementor-element-6f4f3f2{
-   width: 1440px;
+   width: 100%;
    height: 262px;
  
 }
 
 /*Image banière canettes*/
 .elementor-element-d166689{
-   width: 1440px;
+   width: 100%;
    height: 262px;
 }
 
 .elementor-element-d166689 > div:nth-child(1)
 
 .elementor-element-d166689 > div:nth-child(1) > img:nth-child(1){
-   width: 1440px;
+   width: 100%;
    height: 262px;
 }
 
@@ -318,8 +339,8 @@ img.attachment-2048x2048:nth-child(2){
 /*Conteneur Page complete*/
 .elementor{
    margin: auto;
-   width: 1440px;
-   height: 1854px;
+   width: 100%;
+   height: auto;
 }
 
 
@@ -336,7 +357,7 @@ img.attachment-2048x2048:nth-child(2){
 }
 /*Conteneur élément TITRE TEXTE IMAGE*/
 .elementor-element-6b542e9{
-   width: 1440px;
+   width: 100%;
    height: 415px;
 }
 
@@ -365,7 +386,7 @@ img.attachment-2048x2048:nth-child(2){
 img.attachment-thumbnail:nth-child(2){
    margin-top: 151px;
    margin-left: 284.2px;
-   rotate: 290;
+   rotate: 290deg ;
    width: 145.3px;
    height: 150.26px;
    
@@ -376,7 +397,7 @@ img.attachment-thumbnail:nth-child(2){
 /*L'équipe*/
 /*Conteneur de l'équipe*/
 .elementor-element-0875e95{
-   width: 1440px;
+   width: 100%;
    height: 554px;
 }
 
@@ -496,13 +517,13 @@ img.attachment-thumbnail:nth-child(2){
 /*SECTION FORMULAIRE DE CONTACT*/
 /*Conteneur du formulaire*/
 .elementor-element-ee4fdbf{
-   width: 1440px;
+   width: 100%;
    background-color: #E0B9B4;
 }
 
 /*FORMULAIRE COMPLET (Nom Email Message Bouton)*/
 .elementor-element-968e99b{
-width: 1440px;
+width: 100%;
 z-index: 2;
 }
 
@@ -596,18 +617,18 @@ h1.elementor-heading-title:nth-child(1){
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*Conteneur pied de page banniere cannette*/
 .elementor-element-04c5920{
-   width: 1440px;
+   width: 100%;
    height: 172px;
 
 }
 .elementor-element-e87b8a2{
-   width: 1440px;
+   width: 100%;
    height: 172px;
 }
 
 /*Cannettes image banniere*/
 .elementor-element-e87b8a2 > div:nth-child(1) > img:nth-child(1){
-   width: 1440px;
+   width: 100%;
    height: 172px;
  
 }
@@ -616,4 +637,272 @@ h1.elementor-heading-title:nth-child(1){
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*************************************************/
 /*COMMANDER*/
-/*Conteneur Page complète "COMMANDER"*/
+/*Page complète background VERT*/
+.elementor-element-f97b15a{
+   width: 100%;
+}
+
+
+/*??Balise??*/
+div.elementor-element:nth-child(4)
+/*??Balise??*/
+div.elementor-element:nth-child(4) > div:nth-child(1)
+/*??Balise??*/
+.elementor-image-gallery
+
+/*Conteneur titre"COMMANDER"*/
+h1.elementor-heading-title{
+   width: 100%;
+}
+
+/*Titre "COMMANDER"*/
+.elementor-element-eed2b19{
+   width: 100%;
+   height: 46px;
+   margin-left: -150px;
+   font-family: 'Syne', sans-serif;
+   font-weight: 800;
+   font-size: 38px;
+   line-height: 45.6px;
+   text-align: center;
+}
+
+/*Séparateur horizontal blanc N:1*/
+.elementor-divider{
+   width: 860px;
+   margin: auto;
+   margin-top: 69px;
+}
+
+/*Titre "Votre commande"*/
+div.elementor-element:nth-child(3){
+   width: 100%;
+   height: 36px;
+   margin-left: 282px;
+   font-family: 'Syne', sans-serif;
+   font-weight: 700;
+   font-size: 30px;
+   line-height: 36px;
+}
+
+
+/*************************************************/
+/*Galerie*/
+#gallery-1{
+   width: 100%;
+   display: flex;
+}
+
+
+/*Conteneur Titre fraise*/
+#gallery-1-25{
+   z-index: 2;
+   margin-top: -50px;
+   margin-right: 150px;
+}
+
+/*Titre fraise*/
+dl.gallery-item:nth-child(1){
+   color: #FFFFFF;
+   margin-left: 306.01px;
+   font-weight: 800;
+   font-size: 20px;
+   line-height: 24px;
+   text-align: center;
+}
+
+/*Image fraise*/
+dl.gallery-item:nth-child(1) > dt:nth-child(1){
+   width: 192.53px;
+   height: 128.36px;
+}
+
+/*??Balise??*/
+dl.gallery-item:nth-child(1) > dt:nth-child(1) > a:nth-child(1)
+
+
+/*************************************************/
+/*Conteneur Titre pamplemousse*/
+#gallery-1-19{
+   z-index: 2;
+   margin-top: 0px;
+   margin-left: 0px;
+}
+
+
+/*Titre pamplemousse*/
+dl.gallery-item:nth-child(2){
+   color: #FFFFFF;
+   margin-left: -99px;
+   font-weight: 800;
+   font-size: 20px;
+   line-height: 24px;
+   text-align: center;
+   
+}
+
+/*Image pamplemousse*/
+dl.gallery-item:nth-child(2) > dt:nth-child(1){
+   width: 192.53px;
+   height: 128.36px;
+}
+
+/*??Balise??*/
+dl.gallery-item:nth-child(2) > dt:nth-child(1) > a:nth-child(1){
+   width: 100%;
+   margin-top: 0px;
+}
+
+
+/*************************************************/
+/*Conteneur Titre framboise*/
+#gallery-1-34{
+   z-index: 2;
+   margin-top: -50px;
+   margin-right: 155px;
+}
+
+/*Titre framboise*/
+dl.gallery-item:nth-child(3){
+   color: #FFFFFF;
+   margin-left: -99px;
+   font-weight: 800;
+   font-size: 20px;
+   line-height: 24px;
+   text-align: center;
+   
+}
+
+/*Image framboise*/
+dl.gallery-item:nth-child(3) > dt:nth-child(1){
+   width: 192.53px;
+   height: 128.36px;
+}
+
+/*??Balise??*/
+dl.gallery-item:nth-child(3) > dt:nth-child(1) > a:nth-child(1)
+
+/*************************************************/
+/*Conteneur Titre citron*/
+#gallery-1-18{
+   z-index: 2;
+   margin-top: -50px;
+   margin-right: 155px;
+}
+
+/*Titre citron*/
+dl.gallery-item:nth-child(4){
+   color: #FFFFFF;
+  
+   font-weight: 800;
+   font-size: 20px;
+   line-height: 24px;
+   text-align: center;
+   
+}
+
+/*Image citron*/
+dl.gallery-item:nth-child(4) > dt:nth-child(1){
+   width: 192.53px;
+   height: 128.36px;
+}
+
+/*??Balise??*/
+dl.gallery-item:nth-child(4) > dt:nth-child(1) > a:nth-child(1)
+
+
+/*************************************************/
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+/*************************************************/
+/*FORMULAIRE COMMANDER*/
+
+/*Conteneur Formulaire*/
+.elementor-element-71a3374{
+   width: 100%;
+}
+
+/*Conteneur Short-Code*/
+.elementor-element-ea3f93c{
+   width: 100%;
+}
+
+/*Conteneur 4 Inputs commnade en ligne*/
+.input{
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   justify-content: center;
+   flex-direction: row;
+}
+
+
+/*************************************************/
+/*Supprimer label input fraise*/
+.quantite-fraise{
+   display: none;
+}
+
+/*Supprimer label input pamplemousse*/
+.quantite-pamplemousse{
+   display: none;
+}
+
+/*Supprimer label input framboise*/
+.quantite-framboise{
+   display: none;
+}
+
+/*Supprimer label input citron*/
+.quantite-citron{
+   display: none;
+}
+
+
+/*************************************************/
+/*Séparateur horizontal sous input commande*/
+.separateurH{
+   margin: auto;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+/*Conteneur Info Client 2 colonnes*/
+.info-client{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   margin: 30px auto;
+   width: 860px;
+}
+
+/*Afficher Nom, Prénom, Email colonne de gauche*/
+.info-client > h2:nth-child(1),.info-client > p:nth-child(2),.info-client > p:nth-child(3), .info-client > p:nth-child(4){
+   grid-column-start: 1;
+   grid-column-end: 3;
+   width: 383px;
+   height: 71px;
+   border: 7px;
+}
+
+.info-client > h2:nth-child(5), .info-client > p:nth-child(6),.info-client > p:nth-child(7), .info-client > p:nth-child(8){
+   grid-column-start: 2;
+   grid-column-end: 3;
+}
+
+
+
+
+/*Bouton COMMANDER*/
+.wpcf7-submit{
+   width: 198px;
+   height: 55px;
+   border: 5px;
+   margin-left: 631px;
+   background-color: #E0B9B4;
+   color: #FFFFFF;
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 37px;
+   text-align: center;
+   margin-bottom: 90px;
+}
