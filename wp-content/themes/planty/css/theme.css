@@ -1,902 +1,1361 @@
-/*CSS****HEADER*FOOTER*HOME*NOUS RENCONTRER*COMMANDER**/
+/*CSS**GENERALE**HEADER*FOOTER*HOME*NOUS RENCONTRER*COMMANDER* RESPONSIVE**/
+/*{
+   border: solid 1px blue !important;
+}
 
-body {
-   
-   font-style: normal;
+/*Format PARAGRAPHE P tout le texte!! SIZE DIFF: Header Footer*/
+
+/*Format H4 H5  sous titre HOME: "L'énergie des plantes, Fatiha, Vero, Marc.
+ RENCONTRER: L'équipe, Nous contacter, H5  SIZE DIFF: Mégane, Brooke, Sylvie.
+ COMMANDER: Votre commande, Vos informations, Livraison */
+
+/*Format H2 Page Nous rencontrer Commander (Titre H1bis)
+ H3 "Les goûts, Ce qu'ils pensent */
+
+/*Format H1 Page Home (dédié uniquement titre Principale + Titre Image Fraise Pamplemousse....!!) */
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./*GENERALE*//*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+
+/*GENERALE*/
+body{
+   font-family: 'Syne', sans-serif;
    color: #000000;
    max-width: 1440px;
    margin: auto;
+   overflow-x: hidden;
 }
 
+/*Titre H1*/
 h1{
+   font-family: 'Syne', sans-serif;
+   font-weight: 800;
+   font-size: 48px;
+   line-height: 57.6px;
+   color: #FFFFFF;
+}
+
+/*Titre H2*/
+h2{
    font-family: 'Syne', sans-serif;
    font-weight: 800;
    font-size: 38px;
    line-height: 45.6px;
+   color: #FFFFFF;  
+}
+
+/*Titre H3*/
+h3{
+   font-family: 'Syne', sans-serif;
+   font-weight: 800!important;
+   font-size: 30px;
+   line-height: 36px!important;
    color: #FFFFFF;
 }
 
-h2{
+/*Titre H4*/
+h4{
+   font-family: 'Syne', sans-serif;
+   font-weight: 700!important;
+   font-size: 30px;
+   line-height: 36px!important;
+   color: #FFFFFF;
+}
+
+/*Titre H5*/
+h5{
    font-family: 'Syne', sans-serif;
    font-weight: 700;
-   font-size: 30px;
-   line-height: 36px;
+   font-size: 20px;
+   line-height: 24px;
    color: #FFFFFF;
 }
 
+/*Paragraphe text*/
 p{
    font-family: 'Syne', sans-serif;
    font-weight: 400;
    font-size: 20px;
    line-height: 24px;
-   color: #FFFFFF;
+   color: #000000;
 }
 
-/* ?? #wrapper ?? */
-#wrapper{
+/*Paragraphe text petit*/
+.p2{
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19.2px;
+   color: #000000;
+}
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./*HEADER*//*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*HEADER*/
+
+/*Header conteneur*/
+#header{
+   display: flex;
+   height: 80px;
+   align-items: center;
    width: 100%;
+}
+#header .container{
+   width: 50%;
+}
+/*Conteneur logo*/
+.custom-logo{
+   width: 40%;
    height: auto;
 }
 
-/*************************************************/
-/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
-/*************************************************/
-/*HEADER*/
-/*Header format position, menu en ligne*/
-#header{
-   top: 0;
-   max-width: 100%;
-   margin: auto;
-   display: flex;
-   flex-direction: row;
+/*Image logo*/
+.custom-logo-link{
+   object-fit: contain; 
 }
-
-/*Supprimer visuel ...*/
+ 
+/*Supprimer titre et slogan (description) du site*/
 #branding{
    display: none;
 }
 
-/*Format position logo Planty*/
-.custom-logo {
-   width: 100%;
-   height: 80px;
-   margin-left: 31px;
-}
-
-/*Menu en ligne*/
+/*Menu Nav en ligne*/
 #menu-menu-principale{
    display: flex;
-   max-width: 100%;
-   margin: auto;
+   width: 100%;
+   height: 80px;
+   align-items: center;
+   justify-content: flex-end;
 }
 
-/*************************************************/
-/*Menu boutons*/
+/*Conteneur Menu*/
+#menu{
+   width: 50%;
+}
 
-/*Bouton "Vous rencontrer"*/
-li.menu-item-40 {
+/*Header Lien <a> Menu*/
+#menu a{
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19.2px;
+   color: #000000;
+}
+
+/*Header Lien <a> Menu SURVOL*/
+#menu a:hover{
+   font-family: 'Syne', sans-serif;
+   font-weight: 700;
+   font-size: 13px;
+   line-height: 15.6px;
+   color: #000000;
+}
+
+/*NAV Nous rencontrer*/
+#menu-item-40{
+   order: 1;
    width: 200px;
    height: 80px;
-   margin-left: 650px;
-   margin-right: -150px;
-   padding: 30px 15px;
-   display: inline-block; 
-   text-align: center;
 }
 
-/*Bouton "Commander"*/
-li.menu-item-39 {
-   width: 200px;
+/*NAV Commander*/
+#menu-item-39{
+   order: 3;
+   height: auto;
+   width: 236px;
    height: 80px;
-   margin-left: 308px;
-   padding: 30px 25px;
-   display: inline-block;
-   text-align: center;
-   background-color: #DC9F96;
-   color: #FFFFFF;
-   border: none;
+   background-color: #E0B9B4;
 }
 
-/*Bouton "Commander" survol de la souris*/
-li.menu-item-39:hover{
+/*NAV Commander TEXTE*/
+#menu-item-39 a{
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19.2px;
+   color: #FFFFFF; 
+}
+
+/*Commander conteneur */
+#menu-item-39:hover{
    background-color: #C02E44;
 }
 
-
-/*Bouton Admin*/
-#menu-menu-principale > li:nth-child(3) > a:nth-child(1){
-   width: 200px;
-   height: 80px;
-   margin-left: -400px;
-   color:#000000;
-   padding: 30px 15px;
-   display: inline-block; 
-   background-color: #FFFFFF;
-   text-align: center;
-   
-}
-
-/*************************************************/
-/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
-/*************************************************/
-/*FOOTER*/
-/*Footer Couleurs...*/
-#site-footer > a:nth-child(1) > p:nth-child(1){
-   color: #000000;
-   background-color: #FFFFFF;
-   padding: 20px;
-   height: 60px;
-   font-weight: 400;
-   font-size: 16px;
+/*NAV TEXTE Commander SURVOL*/
+#menu-item-39:hover a{
    font-family: 'Syne', sans-serif;
-   text-align: center;
+   font-weight: 700;
+   font-size: 13px;
+   line-height: 15.6px;
+   color: #FFFFFF;
 }
 
+/*NAV Admin*/
+#menu-menu-principale > li:nth-child(3){
+   order: 2;
+   width: 140px;
+   height: 80px;
+   color: #FFFFFF;
+}
+
+/*NAV Commander placement texte*/
+#menu-item-39 > a:nth-child(1){
+  margin: 30%;
+}
+
+/*NAV Nous rencontrer placement texte*/
+#menu-item-40 > a:nth-child(1){
+   margin: 5%;
+}
+ 
+/*NAV Admin placement texte*/
+#menu-menu-principale > li:nth-child(3) > a:nth-child(1){
+   margin: 28%;
+}
+
+/*Centrer texte vertical dan le nav*/
+#menu-menu-principale li{
+   line-height: 80px;
+}
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./*FOOTER*//*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*FOOTER*/
 /*Conteneur Footer*/
 #site-footer {
    width: 100%;
    margin: auto;
    margin-bottom: auto;
+   padding: 0;
 }
 
-/*Balise??*/
-#site-footer > a:nth-child(1){
-   z-index: 2;
-}
-
-
-/*************************************************/
-/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
-/*************************************************/
-/*HOME*/
-/*Conteneur Page complete*/
-.elementor-element-b36a5ed{
-   width: 100%;
-   height: 950px;
-}
-
-/*Titre Principal "Boisson énergisante"*/
-h1.elementor-heading-title:nth-child(2){
-   width: 100%;
-   margin-left: 180px;
-   margin-top: 50px;
-}
-
-/*Titre Principal "100% naturelle"*/
-.elementor-element-690c68d{
-   width: 100%;
-   margin-left: -200px;
-   height: 90px;
-}
-.elementor-element-690c68d > div:nth-child(1){
-   width: 100%;
-   margin: auto;
-}
-
-/*************************************************/
-img.attachment-2048x2048:nth-child(2){
-   width: 100%;
- 
-}
-/*Image principal feuille gauche Planty*/
-.elementor-element-90142b3{
-   width: 100%;
-}
-/*Image principal canette Planty*/
-.elementor-element-1d92cf2{
-   width: 100%;
-
-}
-/*Image principal feuille droite Planty*/
-.elementor-element-9de8589 > div:nth-child(1){
-   width: 100%;
-
-}
-
-
-
-
-/*Conteneur "L'énergie des plantes"*/
-.elementor-element-cd1e9d8{
-   width: 100%;
-   height: 415px;
-}
-
-
-
-/*Conteneur "Ce qu'ils pensent"*/
-.elementor-element-19732f8{
-   width: 100%;
-   height: 638px;
-
-}
-
-/*Titre "Ce qu'ils pensent"*/
-.elementor-element-6e25574{
-   width: 582px;
-   height: 36px;
-   margin: auto;
-   margin-top: 150px;
-}
-
-/*Conteneur "Ce qu'ils pensent" 3 Photos Fathia Véro et Marc*/
-.elementor-element-bec3921{
-   width: 100%;
-   height: 376px;
-   margin-top: 120px; 
-}
-
-
-/*************************************************/
-
-/*Conteneur Image Fathia*/
-.elementor-element-552726d
-/* Image Fathia*/
-.elementor-element-4ff51dd{
-   width: 126.28px;
-   height: 139px;
-   margin-left: 132px;
-}
-/*OU Image Fathia*/
-.elementor-element-4ff51dd > div:nth-child(1)
-/*OU Image Fathia*/
-.wp-image-30
-
-/*Conteneur Titre+Texte Fathia*/
-.elementor-element-388ff18
-/*Conteneur Titre Fathia*/
-.elementor-element-262cbdd
-/*Titre Fathia*/
-.elementor-element-262cbdd > div:nth-child(1)
-/*Conteneur Texte Fathia*/
-.elementor-element-b83191a
-/*Texte Fathia*/
-.elementor-element-b83191a > div:nth-child(1)
-
-/*************************************************/
-
-/*Conteneur Image Véro*/
-.elementor-element-6628bd7{
-   width: 126.28px;
-   height: 139px;
-}
-/* Image Véro*/
-.img:nth-child(1)
-/*OU Image Véro*/
-.elementor-element-3714bf2 > div:nth-child(1)
-/*OU Image Fathia*/
-.wp-image-31
-
-/*Conteneur Titre+Texte Véro*/
-.elementor-element-db2fc8a
-/*Conteneur Titre Véro*/
-.elementor-element-1930ccc
-/*Titre Véro*/
-.elementor-element-1930ccc > div:nth-child(1)
-/*Conteneur Texte Véro*/
-.elementor-element-9ecfe42
-/*Texte Véro*/
-.elementor-element-9ecfe42 > div:nth-child(1)
-
-
-/*************************************************/
-
-/*Conteneur Image Marc*/
-.elementor-element-5d0c627
-/* Image Marc*/
-.elementor-element-ad1a9dd
-/*OU Image Marc*/
-.elementor-element-ad1a9dd > div:nth-child(2)
-/*OU Image Marc*/
-.wp-image-32{
-   width: 126.28px;
-   height: 139px;
-   margin-left: 960px;
-}
-
-
-/*Conteneur Titre+Texte Marc*/
-.elementor-element-96935f2
-/*Conteneur Titre Marc*/
-.elementor-element-4608955
-/*Titre Marc*/
-.elementor-element-4608955 > div:nth-child(2)
-/*Conteneur Texte Marc*/
-.elementor-element-ac6dcd1
-/*Texte Marc*/
-.elementor-element-ac6dcd1 > div:nth-child(2)
-
-
-
-
-/*************************************************/
-
-/*Conteneur bannière canettes*/
-.elementor-element-6f4f3f2{
-   width: 100%;
-   height: 262px;
- 
-}
-
-/*Image banière canettes*/
-.elementor-element-d166689{
-   width: 100%;
-   height: 262px;
-}
-
-.elementor-element-d166689 > div:nth-child(1)
-
-.elementor-element-d166689 > div:nth-child(1) > img:nth-child(1){
-   width: 100%;
-   height: 262px;
-}
-
-
-/*************************************************/
-/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
-/*************************************************/
-/*NOUS RENCONTRER*/
-/*Conteneur Page complete*/
-.elementor{
-   margin: auto;
-   width: 100%;
-   height: auto;
-}
-
-
-.elementor-element-6a237c0 > div:nth-child(1) > img:nth-child(2){
-   margin-top: 81px;
-   margin-left: 184.2px;
-   width: 145.3px;
-   height: 150.26px;
-}
-
-/*Conteneur fleur 20%*/
-.elementor-element-a53cb48{
-   width: 20%;
-}
-/*Conteneur élément TITRE TEXTE IMAGE*/
-.elementor-element-6b542e9{
-   width: 100%;
-   height: 415px;
-}
-
-/*Conteneur élément TITRE TEXTE 80%*/
-.elementor-element-8d7b988{
-   width: 80%;
-}
-
-
-/*Titre Principal "Nous renconter"*/
-.elementor-element-986747e > div:nth-child(1){
-   width: 680px;
-   height: 46px;
-   margin-top: 186px;
-   margin-left: -80px;
-}
-
-/*Texte Principal "Nous renconter"*/
-.elementor-element-4baf497 {
-   width: 669px;
-   height: 72px;
-   margin-left: 98px;
-}
-
-/*Image fleur rotation -70°*/
-img.attachment-thumbnail:nth-child(2){
-   margin-top: 151px;
-   margin-left: 284.2px;
-   rotate: 290deg ;
-   width: 145.3px;
-   height: 150.26px;
-   
-}
-
-
-/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
-/*L'équipe*/
-/*Conteneur de l'équipe*/
-.elementor-element-0875e95{
-   width: 100%;
-   height: 554px;
-}
-
-
-/*************************************************/
-/*Conteneur Mégane*/
-.elementor-element-efecd6f{
-   width: 33.33%;
-}
-
-/*Conteneur Photo Mégane*/
-.elementor-element-4e4c3fc{
-   width: 100%;
-   height: 100%;
-}
-/*Photo Mégane*/
-.elementor-element-4e4c3fc > div:nth-child(1){
-   width: 167px;
-   height: 167px;
-   margin-left: 312px;
-   margin-top: 228px;
-}
-
-/*Prenom Mégane*/
-.elementor-element-e7fcd18 {
-   margin-left: 350px;
-}
-
-/*Métier Mégane*/
-.elementor-element-0b61450 > div:nth-child(1){
-   margin-left: 350px;
-}
-
-
-/*************************************************/
-/*Conteneur Brooke*/
-.elementor-element-9a12d0d{
-   width: 33.33%;
-}
-
-/*Conteneur TITRE L'EQUIPE dans conteneur Brooke*/
-.elementor-element-62a7a90 > div:nth-child(1){
-   margin-top: 140px;
-}
-
-/*Conteneur Photo Brooke*/
-.elementor-element-bb24a9d{
-   width: 100%;
-   height: 100%;
-}
-
-/*Photo Brooke*/
-.elementor-element-bb24a9d > div:nth-child(1){
-   width: 167px;
-   height: 167px;
-   margin: auto;
-   margin-top: 28px;
-}
-
-/*Prenom Brooke*/
-.elementor-element-224a4a4 > div:nth-child(1){
-   margin: auto;
-}
-
-/*Métier Brooke*/
-.elementor-element-c9caef5 > div:nth-child(1){
-   margin: auto;
-}
-
-
-/*************************************************/
-/*Conteneur Sylvie*/
-.elementor-element-2ba26f8{
-   width: 33.33%;
-}
-
-/*Conteneur Photo Sylvie*/
-.elementor-element-ddf0f56{
-   width: 100%;
-   height: 100%;
-}
-
-/*Photo Sylvie*/
-.elementor-element-ddf0f56 > div:nth-child(1) > img:nth-child(1){
-   width: 167px;
-   height: 167px;
-   margin-left: -312px ;
-   margin-top: 228px;
-}
-
-/*Prenom Sylvie*/
-.elementor-element-28cb18f > div:nth-child(1){
-   margin-left: -312px ;
-}
-
-/*Métier Sylvie*/
-.elementor-element-3e37fbc > div:nth-child(1){
-   margin-left: -312px ;
-}
-
-/*************************************************/
-/*Feuille verte*/
-.elementor-element-1ebb1bb{
-   width: 100%;
-   height: 100%;
-}
-
-/*Feuille verte image*/
-.elementor-element-1ebb1bb > div:nth-child(1) > img:nth-child(1){
-   width: 191.21px;
-   height: 219.08px;
-   margin-top: 30px;
-   margin-left: 1050px;
-}
-
-/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
-/*SECTION FORMULAIRE DE CONTACT*/
-/*Conteneur du formulaire*/
-.elementor-element-ee4fdbf{
-   width: 100%;
-   background-color: #E0B9B4;
-}
-
-/*FORMULAIRE COMPLET (Nom Email Message Bouton)*/
-.elementor-element-968e99b{
-width: 100%;
-z-index: 2;
-}
-
-
-/*************************************************/
-/*Formulaire contact*/
-/*"Titre principal" formulaire contact "Nous contacter"*/
-h1.elementor-heading-title:nth-child(1){
-   margin-left: 591px;
-   width: 256px;
-   height: 36px;
-}
-
-
-/*************************************************/
-/*Formulaire contact*/
-/*Supprimer info titre du formulaire "Nous contacter"*/
-.nf-form-title{
-   display: none;
-}
-/*Supprimer info champs obligatoire * des formulaire "nous contacter" et "commander"*/
-.nf-form-fields-required{
-   display: none;
-}
-
-/*Supprimer mes étoile * champs obligatoire des formulaires "nous contacter" et "commander"*/
-.ninja-forms-req-symbol{
-   display: none;
-}
-
-
-/*************************************************/
-/*Formulaire contact*/
-/*"Nom" formulaire "Nous contacter"*/
-#nf-label-field-5{
-   margin-left: 529px;
-}
-/*Conteneur ecriture "Nom" (Blanc) formulaire "Nous contacter"*/
-#nf-field-5{
-   margin-left: 529px;
-   width: 383px;
-   height: 71px;
-}
-
-/*"Email" formulaire "Nous contacter"*/
-#nf-label-field-6{
-   margin-left: 529px;
-}
-/*"Conteneur ecriture Email" (Blanc) formulaire "Nous contacter"*/
-#nf-field-6{
-   margin-left: 529px;
-   width: 383px;
-   height: 71px;
-}
-
-/*"Message" formulaire "Nous contacter"*/
-#nf-field-7-wrap > div:nth-child(1){
-   margin-left: 529px;
-}
-/*Conteneur ecriture "Message" (Blanc) formulaire "Nous contacter"*/
-#nf-field-7{
-   margin-left: 529px;
-   width: 383px;
-   height: 237px;
-}
-
-/*Bouton Envoyer formulaire "Nous contacter"*/
-#nf-field-8{
-   margin-left: 621px;
-   width: 198px;
-   height: 55px;
-   background-color: #E0B9B4;
-   color: #FFFFFF;
-   border-radius: 5px;
-   margin-left: 621px;
-}
-
-
-/*************************************************/
-/*Formulaire contact*/
-/*Image plante formulaire "Nous contacter"*/
-.elementor-element-6647cc0 > div:nth-child(1) > img:nth-child(1){
-   margin-left: 172px;
-   margin-top: 545px;
-   width: 147.32px;
-   height: 134.97px;
-   z-index: 1;
-}
-
-
-/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
-/*Conteneur pied de page banniere cannette*/
-.elementor-element-04c5920{
-   width: 100%;
-   height: 172px;
-
-}
-.elementor-element-e87b8a2{
-   width: 100%;
-   height: 172px;
-}
-
-/*Cannettes image banniere*/
-.elementor-element-e87b8a2 > div:nth-child(1) > img:nth-child(1){
-   width: 100%;
-   height: 172px;
- 
-}
-
-/*************************************************/
-/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
-/*************************************************/
-/*COMMANDER*/
-/*Page complète background VERT*/
-.elementor-element-f97b15a{
-   width: 100%;
-}
-
-
-/*??Balise??*/
-div.elementor-element:nth-child(4)
-/*??Balise??*/
-div.elementor-element:nth-child(4) > div:nth-child(1)
-/*??Balise??*/
-.elementor-image-gallery
-
-/*Conteneur titre"COMMANDER"*/
-h1.elementor-heading-title{
-   width: 100%;
-}
-
-/*Titre "COMMANDER"*/
-.elementor-element-eed2b19{
-   width: 100%;
-   height: 46px;
-   margin-left: -150px;
-   font-family: 'Syne', sans-serif;
-   font-weight: 800;
-   font-size: 38px;
-   line-height: 45.6px;
+/*Footer Couleurs...*/
+.header-footer-group{
+   padding: 20px;
+   height: 60px;
    text-align: center;
 }
 
-/*Séparateur horizontal blanc N:1*/
-.elementor-divider{
-   width: 860px;
-   margin: auto;
-   margin-top: 69px;
-}
-
-/*Titre "Votre commande"*/
-div.elementor-element:nth-child(3){
-   width: 100%;
-   height: 36px;
-   margin-left: 282px;
+/*Footer text*/
+.Ml{
    font-family: 'Syne', sans-serif;
-   font-weight: 700;
-   font-size: 30px;
-   line-height: 36px;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 60px;
+   color: #000000;
 }
 
 
-/*************************************************/
-/*Galerie*/
-#gallery-1{
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./*HOME*//*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*HOME*/
+/*Home SECTION image canette*/
+
+/*Conteneur image principal*/
+.home #container{
+   width: 100%;
+}
+
+/*Padding top Conteneur titre*/
+.home .elementor-element-b36a5ed{
+   padding-top: 80px;
+}
+
+/*Conteneur 3 images*/
+.home .elementor-element-52e7e45{
    width: 100%;
    display: flex;
 }
 
+/*Conteneur*/
+.home .elementor-element-e872f88{
+   width: 100%;
+}
 
+/*Conteneur   BEUG NON 100% DE LARGEUR*/
+.home .e-con-inner{
+   width: 100%;
+   padding-top: 100px;
+}
+
+/*Conteur conteneur Feuille de gauche*/
+.home .elementor-element-8ee9ce3{
+   width: 33%;  
+   padding-top: 85px;
+}
+
+/*Image Feuille de gauche*/
+.home .elementor-element-8ee9ce3 > div:nth-child(1) > img:nth-child(2){
+   z-index: 1;
+   margin-left: 58%;
+}
+
+/*Conteneur conteneur Canette*/
+.home .elementor-element-ba57524{
+   width: 33%;
+   margin: auto;
+}
+
+/*Conteneur Canette*/
+.home .elementor-element-ba57524 > div:nth-child(1){
+   margin: auto;
+   z-index: 3;
+   position: relative;
+}
+
+/*Image Canette*/
+.home .elementor-element-ba57524 > div:nth-child(1) > img:nth-child(1){
+   z-index: 3;
+   margin: auto;
+}
+
+/*Conteur conteneur Feuille de droite*/
+.home .elementor-element-09150f8{
+   width: 33%;
+   padding-top: 85px;
+}
+
+/*Image Feuille de droite*/
+.home .elementor-element-09150f8 > div:nth-child(1) > img:nth-child(1){
+   z-index: 1;
+   margin-left: -118%;
+   position: relative;
+}
+
+/**************************************************************************************************/
+/*Home SECTION L'énergie des plantes*/
+
+
+
+/*Texte palcement "Planty, c’est la première boisson
+énergisante composée à 100 % de produits naturels..." */
+.home .elementor-element-aec91a0{
+   margin-top: 30px;
+}
+
+/*Texte "Planty, c’est la première boisson
+énergisante composée à 100 % de produits naturels..." */
+.home .elementor-element-c3e82c4{
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 24px;
+}
+/**************************************************************************************************/
+/*Home SECTION Les goûts IMAGES*/
+
+/*conteneur padding 0*/
+.home .elementor-element-0049813{
+   padding: 0;
+}
+
+/*conteneur galerie 4 images*/
+.home .elementor-element-566e9c9{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   width: 100%;
+   height: 620px;
+   margin-top: 20px;
+}
+
+/*Conteneur image fraise*/
+.home .elementor-element-27cb8b2 > div:nth-child(1) > img:nth-child(1){
+   width: 56.96%;
+   height: 262px;
+   margin-left: 43%;
+}
+
+/*Conteneur image pamplemousse*/
+.home .elementor-element-f6ba255 > div:nth-child(1) > img:nth-child(1){
+   width: 56.96%;
+   height: 262px;
+   margin-right: 43%;
+}
+
+/*Conteneur image framboise*/
+.home .elementor-element-77821b1 > div:nth-child(1) > img:nth-child(1){
+   width: 56.96%;
+   height: 262px;
+   margin-left: 43%;
+ }
+
+/*Conteneur image citron*/
+.home .elementor-element-d08c8a8 > div:nth-child(1) > img:nth-child(1){
+   width: 56.96%;
+   height: 262px;
+   margin-right: 43%;
+}
+
+/**************************************************************************************************/
+/*Home SECTION Les goûts IMAGES*/
+
+/*Titre H1 blanc*/
 /*Conteneur Titre fraise*/
-#gallery-1-25{
+.home .elementor-element-9f5b5f0 > div:nth-child(1){
+   width: 56.96%;
+   margin-left: 43%;
    z-index: 2;
-   margin-top: -50px;
-   margin-right: 150px;
 }
 
-/*Titre fraise*/
-dl.gallery-item:nth-child(1){
-   color: #FFFFFF;
-   margin-left: 306.01px;
-   font-weight: 800;
-   font-size: 20px;
-   line-height: 24px;
-   text-align: center;
+/*Placement Conteneur Titre fraise*/
+.home .elementor-element-9f5b5f0{
+   bottom: 460px;
 }
 
-/*Image fraise*/
-dl.gallery-item:nth-child(1) > dt:nth-child(1){
-   width: 192.53px;
-   height: 128.36px;
-}
-
-/*??Balise??*/
-dl.gallery-item:nth-child(1) > dt:nth-child(1) > a:nth-child(1)
-
-
-/*************************************************/
 /*Conteneur Titre pamplemousse*/
-#gallery-1-19{
+.home .elementor-element-89b88ab > div:nth-child(1){
+   width: 56.96%;
+   margin-right: 43%;
    z-index: 2;
-   margin-top: 0px;
-   margin-left: 0px;
 }
 
-
-/*Titre pamplemousse*/
-dl.gallery-item:nth-child(2){
-   color: #FFFFFF;
-   margin-left: -99px;
-   font-weight: 800;
-   font-size: 20px;
-   line-height: 24px;
-   text-align: center;
-   
+/*Placement Conteneur Titre pamplemousse*/
+.home .elementor-element-40cf025{
+   bottom: 320px;
 }
 
-/*Image pamplemousse*/
-dl.gallery-item:nth-child(2) > dt:nth-child(1){
-   width: 192.53px;
-   height: 128.36px;
-}
-
-/*??Balise??*/
-dl.gallery-item:nth-child(2) > dt:nth-child(1) > a:nth-child(1){
-   width: 100%;
-   margin-top: 0px;
-}
-
-
-/*************************************************/
 /*Conteneur Titre framboise*/
-#gallery-1-34{
+.home .elementor-element-40cf025 > div:nth-child(1){
+   width: 56.96%;
+   margin-left: 43%;
    z-index: 2;
-   margin-top: -50px;
-   margin-right: 155px;
 }
 
-/*Titre framboise*/
-dl.gallery-item:nth-child(3){
-   color: #FFFFFF;
-   margin-left: -99px;
-   font-weight: 800;
-   font-size: 20px;
-   line-height: 24px;
-   text-align: center;
-   
+/*Placement Conteneur Titre framboise*/
+.home .elementor-element-89b88ab{
+   bottom: 480px;
 }
 
-/*Image framboise*/
-dl.gallery-item:nth-child(3) > dt:nth-child(1){
-   width: 192.53px;
-   height: 128.36px;
-}
-
-/*??Balise??*/
-dl.gallery-item:nth-child(3) > dt:nth-child(1) > a:nth-child(1)
-
-/*************************************************/
 /*Conteneur Titre citron*/
-#gallery-1-18{
+.home .elementor-element-7fa3054 > div:nth-child(1){
+   width: 56.96%;
+   margin-right: 43%;
    z-index: 2;
-   margin-top: -50px;
-   margin-right: 155px;
 }
 
-/*Titre citron*/
-dl.gallery-item:nth-child(4){
-   color: #FFFFFF;
+/*Placement Conteneur Titre citron*/
+.home div.elementor-element:nth-child(8){
+   bottom: 300px;
+}
+
+/**************************************************************************************************/
+/*Home SECTION Les goûts IMAGES*//*BOUTON*/
+
+/*Conteneur Bouton Commander Home*/
+.home .elementor-element-a487859{
+   padding: 0;
+}
+
+/*Conteneur Bouton Commander Home*/
+.home div.elementor-element:nth-child(9){
+   width: 100%;
+}
+ 
+/*Placement Bouton Commander Home*/
+.home div.elementor-element:nth-child(9){
+   margin: auto;
+}
+
+/*Taille Bouton Commander Home*/
+.home .elementor-button{
+   width: 198px;
+   height: 55px;
+}
+
+/*Taille Texte Bouton Commander Home*/
+.home .elementor-button-text{
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 37px;
+}
+
+/**************************************************************************************************/
+/*Home SECTION Ce qu'ils en pensent Conteneur*/
+
+/*Conteneur Section Ce qu'ils en pensent*/
+.home .elementor-element-eb7b7c4{
+   width: 100%;
+   height: 100%;
+   padding: 0;
+}
+
+/*Conteneur conteneur Photos + Nom + Descriptif*/
+.home .elementor-element-0e30121{
+   width: 100%;
+   margin-top: 20px;
+}
+
+/*Conteneur photo + Nom + Descriptif*/
+.home .elementor-element-0e30121 > div:nth-child(1){
+   width: 100%;
+   margin: auto;
+}
+
+/*Conteneur conteneur Gallerie*/
+.home #gallery-1{
+   width: 100%;
+   height: auto;
+   justify-content: space-around;
+   display: flex;
+   grid-template-columns: 1fr 1fr 1fr;
+   margin-top: 30px;
+   margin-bottom: 40px;
+}
+
+/*Conteneur Gallerie*/
+.home .elementor-image-gallery{
+   width: 100%;
+}
+
+/**************************************************************************************************/
+/*Home SECTION Ce qu'ils en pensent, Galerie*/
+
+/*Conteneur Gallerie FATIHA*/
+.home dl.gallery-item:nth-child(1){
+   display: grid;
+   grid-template-columns: 126.28px 216.72px;
+   width: 343px!important;
+   height: 139px;
+}
+
+/*Conteneur Photo FATIHA*/
+.home dl.gallery-item:nth-child(1) > dt:nth-child(1){
+   width: 100%;
+   height: 100%;
+}
+
+/*Photo FATIHA*/
+.home dl.gallery-item:nth-child(1) > dt:nth-child(1) > img:nth-child(1){
+   width: 126.8px;
+   height: 139px;
+   border: 0!important;
+}
+
+/*Texte Nom FATIHA*/
+.home #gallery-1-30 > h4:nth-child(1){
+   color: #3B8E46;
   
-   font-weight: 800;
+   width: 100%;
+}
+
+/*Texte FATIHA*/
+.home #gallery-1-30 > p2:nth-child(3){
+   display: block;
+   width: 90%;
+   text-align: left;
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19.2px;
+   color: #000000;
+   padding-left: 5%;
+}
+
+/**************************************************************************************************/
+/*Home SECTION Ce qu'ils en pensent, Galerie VERO*/
+
+/*Conteneur Gallerie VERO*/
+.home dl.gallery-item:nth-child(2){
+   display: grid;
+   grid-template-columns: 126.28px 216.72px;
+   width: 343px!important;
+   height: 139px;
+}
+
+/*Conteneur Photo VERO*/
+.home dl.gallery-item:nth-child(2) > dt:nth-child(1){
+   width: 100%;
+   height: 100%;
+}
+
+/*Photo VERO*/
+.home dl.gallery-item:nth-child(2) > dt:nth-child(1) > img:nth-child(1){
+   width: 126.8px;
+   height: 139px;
+   border: 0!important;
+}
+
+/*Texte Nom VERO*/
+.home #gallery-1-31 > h4:nth-child(1){
+   color: #3B8E46;
+ 
+   width: 100%;
+}
+
+/*Texte VERO*/
+.home #gallery-1-31 > p2:nth-child(3){
+   display: block;
+   width: 90%;
+   text-align: left;
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19.2px;
+   color: #000000;
+   padding-left: 5%;
+}
+
+/**************************************************************************************************/
+/*Home SECTION Ce qu'ils en pensent, Galerie MARC*/
+
+/*Conteneur Gallerie MARC*/
+.home dl.gallery-item:nth-child(3){
+   display: grid;
+   grid-template-columns: 126.28px 216.72px;
+   width: 343px!important;
+   height: 139px;
+}
+
+/*Conteneur Photo MARC*/
+.home dl.gallery-item:nth-child(3) > dt:nth-child(1){
+   width: 100%;
+   height: 100%;
+}
+
+/*Photo MARC*/
+.home dl.gallery-item:nth-child(3) > dt:nth-child(1) > img:nth-child(1){
+   width: 126.8px;
+   height: 139px;
+   border: 0!important;
+}
+
+/*Texte Nom MARC*/
+.home #gallery-1-32 > h4:nth-child(1){
+   color: #3B8E46;
+   width: 100%;
+}
+
+/*Texte MARC*/
+.home #gallery-1-32 > p2:nth-child(3){
+   display: block;
+   width: 90%;
+   text-align: left;
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 19.2px;
+   color: #000000;
+   padding-left: 5%;
+}
+
+/**************************************************************************************************/
+/*Home SECTION Cannettes pied de page*/
+
+/*Conteneur conteneur Cannettes pied de page*/
+.home .elementor-element-6550eb3{
+   width: 100%;
+   height: 100%;
+}
+ 
+/*Conteneur Cannettes pied de page*/
+.home .elementor-element-6550eb3 > div:nth-child(1){
+   width: 100%;
+}
+
+/*Image Cannettes pied de page*/
+.home .elementor-element-6550eb3 > div:nth-child(1) > img:nth-child(1){
+   width: 100%;
+   height: 100%;  
+   margin: auto;
+   margin-top: 30px;
+}
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./*NOUS RENCONTRER*//*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*NOUS RENCONTRER*/
+
+/*SECTION Titre + Image Fleur*/
+/*Placement Titre*/
+.nous-rencontrer h1.elementor-heading-title:nth-child(2){
+   margin-top: 20px;
+}
+
+/*Conteneur Nous rencontrer + fleur*/
+.nous-rencontrer .elementor-element-8d7b988{
+   display: flex;
+   flex-direction: row;
+}
+
+/*Element Titre NOUS RENCONTRER*/
+.nous-rencontrer .elementor-element-986747e{
+   order: 2;
+   padding-top: 100px;
+}
+
+/*Element Texte NOUS RENCONTRER*/
+.nous-rencontrer .elementor-element-4baf497{
+  order: 3;
+  height: 125px;
+}
+
+/*Element Fleur*/
+.nous-rencontrer .elementor-element-6a237c0{
+   order: 1;
+   width: 145.3px;
+   height: 150.26px;
+   transform: rotate(290deg);
+   margin-left: 170px;
+   margin-top: 40px;
+}
+
+/**************************************************************************************************/
+/*NOUS RENCONTRER SECTION L'EQUIPE*/
+
+/*Titre L'EQUIPE*/
+.nous-rencontrer .elementor-element-62a7a90 > div:nth-child(1) > h4:nth-child(1){
+   padding-top: 100px;
+   padding-bottom: 20px;
+}
+
+/*Conteneur Titre L'EQUIPE*/
+.nous-rencontrer .elementor-element-ab83a88{
+   padding: 0;
+}
+
+/*Conteneur L'EQUIPE Image + Nom + Texte*/
+.nous-rencontrer .elementor-element-0875e95{
+   padding: 0;
+   margin: auto;
+   max-width: 60%;
+   padding-bottom: 50px;
+}
+
+/*Conteneur conteneur Feuille Image*/
+.nous-rencontrer .elementor-element-1ebb1bb{
+   position: absolute;
+   right: -22%;
+   z-index: 2;
+   top: 119px;
+}
+
+/*Hauteur conteneur*/
+.nous-rencontrer .elementor-element-9a12d0d{
+   height: 40%;
+}
+
+/**************************************************************************************************/
+/*NOUS RENCONTRER SECTION Nous contacter FORMULAIRE*/
+
+/*Conteneur NOUS CONTACTER FORMULAIRE*/
+.nous-rencontrer .elementor-element-968e99b{
+   width: 400px;
+   margin: auto;
+}
+
+/*Conteneur*/
+.nous-rencontrer .nf-form-content{
+   padding: 0;
+}
+
+
+/*SUPPRIMER Titre FORMULAIRE*/
+.nous-rencontrer #nf-form-title-2{
+   display: none;
+}
+
+/*SUPPRIMER Champ obligatoires.. FORMULAIRE*/
+.nous-rencontrer .nf-form-fields-required {
+   display: none;
+}
+
+/*SUPPRIMER Champ * FORMULAIRE*/
+.nous-rencontrer #nf-label-field-5 > span:nth-child(1){
+   display: none;
+}
+
+/*SUPPRIMER Champ * FORMULAIRE*/
+.nous-rencontrer #nf-label-field-6 > span:nth-child(1){
+   display: none;
+}
+
+/*SUPPRIMER Champ * FORMULAIRE*/
+.nous-rencontrer #nf-label-field-7 > span:nth-child(1){
+   display: none;
+}
+
+/*Taille Label NOM EMAIL MESSAGE*/
+.nous-rencontrer #nf-label-field-5, #nf-label-field-6, #nf-label-field-7{
    font-size: 20px;
+   font-weight: 400;
+   line-height: 24px;
+   letter-spacing: 0em;
+   text-align: left;
+}
+
+/*Taille Input NOM*/
+.nous-rencontrer #nf-field-5{
+   height: 71px;
+   border-radius: 7px;
+}
+
+/*Taille Input Email*/
+.nous-rencontrer #nf-field-6{
+   height: 71px;
+   border-radius: 7px;
+}
+
+/*Taille Input MESSAGE*/
+.nous-rencontrer #nf-field-7{
+   height: 237px;
+   border-radius: 7px;
+}
+/*Bouton ENVOYER*/
+.nous-rencontrer #nf-field-8{
+   width: 198px;
+   height:55px;
+   background-color: #E0B9B4;
+   border-radius: 5px;
+}
+
+/*Conteneur Bouton ENVOYER*/
+.nous-rencontrer #nf-field-8-wrap > div:nth-child(2){
+   width: 198px;
+   height: 55px;
+   margin:auto;
+}
+
+/*Supprimer espace*/
+.nous-rencontrer #nf-form-errors-2{
+   display: none;
+}
+
+/*Conteneur Fleur sous FORMULAIRE z-index..*/
+.nous-rencontrer .elementor-element-6647cc0{
+   position: absolute;
+   margin-left: 30.2%;
+   margin-top: 39.6%;
+}
+
+/*Fleur Image sous FORMULAIRE*/
+.nous-rencontrer .elementor-element-6647cc0 > div:nth-child(1) > img:nth-child(1){
+   width: 100%;
+}
+.nous-rencontrer .elementor-element-6647cc0 > div:nth-child(1){
+   width: 147.32px;
+   height: 134.97px;
+}
+
+/*Canettes pied de page*/
+.nous-rencontrer .elementor-element-04c5920{
+   padding: 0;
+}
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./*COMMANDER*//*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*COMMANDER*/
+/*Conteneur Padding 0*/
+.commander .elementor-element-f97b15a{
+   padding: 0!important;
+}
+
+/*Conteneur Padding 0*/
+.commander .elementor-element-71a3374{
+   padding: 0;
+   bottom: 45px;
+}
+
+
+/*Conteneur Titre*/
+.commander .elementor-element-eed2b19 > div:nth-child(1){
+   width: 100%;
+   margin: auto;
+   margin-top: 50px;
+   margin-bottom: 30px;
+}
+
+/*Conteneur conteneur Titre*/
+.commander .elementor-element-eed2b19{
+   width: 100%;
+   margin: auto;
+}
+
+/*Conteneur conteneur Séparateur horizontal Blanc*/
+.commander .elementor-element-ba5cf68{
+   width:100%
+}
+
+/*Conteneur Séparateur horizontal Blanc*/
+.commander .elementor-element-ba5cf68 > div:nth-child(1){
+   width: 59.7%;
+   margin: auto;
+}
+
+/*Séparateur horizontal Blanc*/
+.commander .elementor-divider{
+   width: 100%;
+   margin-bottom: 30px;
+}
+
+/*Titre Votre commande*/
+.commander div.elementor-element:nth-child(3){
+   width: 50%;
+   margin-left: 20%;
+}
+
+/*************************************************/   /*************************************************/
+/*Conteneur conteneur Taille formulaire Commande image fruit*/
+.commander div.elementor-element:nth-child(4){
+width: 59.72%;
+margin: auto;
+}  
+
+/*Conteneur formulaire Commande*/
+.commander #gallery-1{
+   justify-content: space-between;
+   margin-top: 20px;
+}
+
+
+/*Titre de l'image fraise*/
+.commander #gallery-1-25{
+   z-index: 2;
+   position: relative;
+   margin: auto;
+   color: #FFFFFF;
+   font-size: 20px;
+   font-weight: 800;
    line-height: 24px;
    text-align: center;
-   
+   bottom: 75px;
 }
 
-/*Image citron*/
-dl.gallery-item:nth-child(4) > dt:nth-child(1){
+/*Titre de l'image pamplemousse*/
+.commander #gallery-1-19{
+   z-index: 2;
+   position: relative;
+   margin: auto;
+   color: #FFFFFF;
+   font-size: 20px;
+   font-weight: 800;
+   line-height: 24px;
+   text-align: center;
+   bottom: 85px;
+}
+
+/*Titre de l'image framboise*/
+.commander #gallery-1-34{
+   z-index: 2;
+   position: relative;
+   margin: auto;
+   color: #FFFFFF;
+   font-size: 20px;
+   font-weight: 800;
+   line-height: 24px;
+   text-align: center;
+   bottom: 85px;
+}
+
+/*Titre de l'image citron*/
+.commander #gallery-1-18{
+   z-index: 2;
+   position: relative;
+   margin: auto;
+   color: #FFFFFF;
+   font-size: 20px;
+   font-weight: 800;
+   line-height: 24px;
+   text-align: center;
+   bottom: 75px;
+}
+
+/*Taille de l'image fraise*/
+.commander dl.gallery-item:nth-child(1) > dt:nth-child(1) > a:nth-child(1) > img:nth-child(1){
    width: 192.53px;
    height: 128.36px;
+   border: none!important;
 }
 
-/*??Balise??*/
-dl.gallery-item:nth-child(4) > dt:nth-child(1) > a:nth-child(1)
+/*Taille de l'image pamplemousse*/
+.commander dl.gallery-item:nth-child(2) > dt:nth-child(1) > a:nth-child(1) > img:nth-child(1){
+   width: 192.53px;
+   height: 128.36px;
+   border: none!important;
+}
 
+/*Taille de l'image framboise*/
+.commander dl.gallery-item:nth-child(3) > dt:nth-child(1) > a:nth-child(1) > img:nth-child(1){
+   width: 192.53px;
+   height: 128.36px;
+   border: none!important;
+}
 
-/*************************************************/
-/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
-/*************************************************/
-/*FORMULAIRE COMMANDER*/
+/*Taille de l'image citron*/
+.commander dl.gallery-item:nth-child(4) > dt:nth-child(1) > a:nth-child(1) > img:nth-child(1){
+   width: 192.53px;
+   height: 128.36px;
+   border: none!important;
+}
 
-/*Conteneur Formulaire*/
-.elementor-element-71a3374{
+/*Taille Formulaire*/
+.commander .elementor-element-ea3f93c{
+   max-width: 100%;
+   margin: auto;
+}
+
+/*Taille Formulaire*/
+.commander .elementor-element-ea3f93c > div:nth-child(1){
+   width: 100%;
+}
+ 
+/*Taille Formulaire*/
+.commander .elementor-shortcode{
    width: 100%;
 }
 
-/*Conteneur Short-Code*/
-.elementor-element-ea3f93c{
+/*Taille Formulaire*/
+.commander .wpcf7-form{
+   max-width: 59.72%;
+   margin: auto;
+}
+
+/*************************************************/   /*************************************************/
+/*Conteneur Input + formulaire*/
+.commander #wpcf7-f570-p13-o1{
    width: 100%;
 }
 
-/*Conteneur 4 Inputs commnade en ligne*/
-.input{
+/*Input en ligne*/
+.commander .input{
    width: 100%;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
    justify-content: center;
    flex-direction: row;
+   margin: auto;
 }
 
+/*Input fraise*/
+.commander .input > p:nth-child(1){
+   width: 25%;
+   margin: auto;
+}
 
-/*************************************************/
+/*Input fraise*/
+.commander .input > p:nth-child(1) > span:nth-child(3) > input:nth-child(1){
+   width: 39px;
+   height: 56px;
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 16.39px;
+   text-align: center;
+   color: #000000;
+}
+
 /*Supprimer label input fraise*/
-.quantite-fraise{
+.commander .quantite-fraise{
    display: none;
+}
+
+/*Input pamplemousse*/
+.commander .input > p:nth-child(2){
+   width: 25%;
+   margin: auto;
+}
+
+/*Input pamplemousse*/
+.commander .input > p:nth-child(2) > span:nth-child(3) > input:nth-child(1){
+   width: 39px;
+   height: 56px;
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 16.39px;
+   text-align: center;
+   color: #000000;
 }
 
 /*Supprimer label input pamplemousse*/
-.quantite-pamplemousse{
+.commander .quantite-pamplemousse{
    display: none;
+}
+
+/*Input Framboise*/
+.commander .input > p:nth-child(3){
+   width: 25%;
+   margin: auto;
+}
+
+/*Input Framboise*/
+.commander .input > p:nth-child(3) > span:nth-child(3) > input:nth-child(1){
+   width: 39px;
+   height: 56px;
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 16.39px;
+   text-align: center;
+   color: #000000;
 }
 
 /*Supprimer label input framboise*/
-.quantite-framboise{
+.commander .quantite-framboise{
    display: none;
+}
+
+/*Input Citron*/
+.commander .input > p:nth-child(4){
+   width: 25%;
+   margin: auto;
+}
+
+/*Input Citron*/
+.commander .input > p:nth-child(4) > span:nth-child(3) > input:nth-child(1){
+   width: 39px;
+   height: 56px;
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 16.39px;
+   text-align: center;
+   color: #000000;
 }
 
 /*Supprimer label input citron*/
-.quantite-citron{
+.commander .quantite-citron{
    display: none;
 }
 
-
-/*************************************************/
+/*Supprimer les flèches des inputs number*/
+/* Firefox */
+input[type=number] {
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+   
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button { 
+   -webkit-appearance: none;
+   margin:0;
+}
+   
+/* Opéra*/
+input::-o-inner-spin-button,
+input::-o-outer-spin-button { 
+   -o-appearance: none;
+   margin:0
+}
+   
+/*************************************************/   /*************************************************/
 /*Séparateur horizontal sous input commande*/
-.separateurH{
+.commander .separateurH{
+   width: 100%;
    margin: auto;
    margin-top: 30px;
    margin-bottom: 30px;
 }
 
-/*Conteneur Info Client 2 colonnes*/
-.info-client{
+.commander .horizontal{
+   width: 100%!important;
+}
+
+/*Conteneur Info Client 3 colonnes*/
+.commander .wpcf7-form > id\=formulaire:nth-child(4){
    display: grid;
-   grid-template-columns: 1fr 1fr;
-   margin: 30px auto;
-   width: 860px;
+   grid-template-columns: 48% 4% 48%;
+   margin: auto;
+   justify-content: center;
+   width: 100%;
+   padding-top: 20px;
+}
+/*Taille colonne Gauche*/
+.commander .info-client{
+   width: 100%;
+}
+
+/*Taille colonne Droite*/
+.commander .ad-client{
+   width: 100%;
 }
 
 /*Afficher Nom, Prénom, Email colonne de gauche*/
-.info-client > h2:nth-child(1),.info-client > p:nth-child(2),.info-client > p:nth-child(3), .info-client > p:nth-child(4){
+.commander .info-client > h2:nth-child(1),.info-client > p:nth-child(2),.info-client > p:nth-child(3), .info-client > p:nth-child(4){
    grid-column-start: 1;
-   grid-column-end: 3;
-   width: 383px;
-   height: 71px;
+   grid-column-end: 2;
+   width: 100%;
    border: 7px;
 }
 
-.info-client > h2:nth-child(5), .info-client > p:nth-child(6),.info-client > p:nth-child(7), .info-client > p:nth-child(8){
+/*Afficher separateur blanc vertical*/
+.commander .vertical{
    grid-column-start: 2;
    grid-column-end: 3;
+   width: 100%;
+   height: 447px;
 }
 
+/*Afficher Adresse, Code postal, Ville colonne de droite*/
+.commander .ad-client > h2:nth-child(5), .ad-client > p:nth-child(6),.ad-client > p:nth-child(7), .ad-client > p:nth-child(8){
+   grid-column-start: 3;
+   grid-column-end: 4;
+   width: 100%;
+   border: 7px;
+}
 
+/*************************************************/   /*************************************************/
+/*Marge bottom Titre Vos infos*/
+.commander .info-client > h4:nth-child(1){
+   margin-bottom: 20px;
+   margin-left: 5px;
+}
 
+/*Marge bottom Titre Livraison*/
+.commander .ad-client > h4:nth-child(1){
+   margin-bottom: 20px;
+   margin-left: 5%;
+}
+
+/*Afficher Nom en blanc*/
+.commander .info-client > p:nth-child(2) > label:nth-child(1){
+   color: #FFFFFF;
+   margin-left: 5px;
+}
+
+/*Afficher Prénom en blanc*/
+.commander .info-client > p:nth-child(3) > label:nth-child(1){
+   color: #FFFFFF;
+   margin-left: 5px;
+}
+
+/*Afficher E-mail en blanc*/
+.commander .info-client > p:nth-child(4) > label:nth-child(1){
+   color: #FFFFFF;
+   margin-left: 5px;
+}
+
+/*Afficher Ad livraison en blanc*/
+.commander .ad-client > p:nth-child(2) > label:nth-child(1){
+   color: #FFFFFF;
+   margin-left: 5%;
+}
+
+/*Afficher Code postal en blanc*/
+.commander .ad-client > p:nth-child(3) > label:nth-child(1){
+   color: #FFFFFF;
+   margin-left: 5%;
+}
+
+/*Afficher Ville en blanc*/
+.commander .ad-client > p:nth-child(4) > label:nth-child(1){
+   color: #FFFFFF;
+   margin-left: 5%;
+   margin-bottom: 10%;
+}
+
+/*************************************************/  /*************************************************/
+/*Taille input Nom */
+.commander .info-client > p:nth-child(2) > span:nth-child(3) > input:nth-child(1){
+   width: 93%;
+   height: 71px;
+   border-radius: 7px;
+   margin-bottom: 5%;
+   margin-top: 5%;
+   margin-left: 5px;
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 16.39px;
+   color: #000000;
+}
+
+/*Taille input Préom */
+.commander .info-client > p:nth-child(3) > span:nth-child(3) > input:nth-child(1){
+   width: 93%;
+   height: 71px;
+   border-radius: 7px;
+   margin-bottom: 5%;
+   margin-top: 5%;
+   margin-left: 5px;
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 16.39px;
+   color: #000000;
+}
+
+/*Taille input E-mail */
+.commander .wpcf7-email{
+   width: 93%;
+   height: 71px;
+   border-radius: 7px;
+   margin-bottom: 5%;
+   margin-top: 5%;
+   margin-left: 5px;
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 16.39px;
+   color: #000000;
+}
+
+/*Taille input Ad */
+.commander .ad-client > p:nth-child(2) > span:nth-child(3) > input:nth-child(1){
+   width: 93%;
+   height: 71px;
+   border-radius: 7px;
+   margin-bottom: 5%;
+   margin-top: 5%;
+   margin-left: 5%;
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 16.39px;
+   color: #000000;
+}
+
+/*Taille input Code postal */
+.commander .ad-client > p:nth-child(3) > span:nth-child(3) > input:nth-child(1){
+   width: 93%;
+   height: 71px;
+   border-radius: 7px;
+   margin-bottom: 5%;
+   margin-top: 5%;
+   margin-left: 5%;
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 16.39px;
+   color: #000000;
+}
+
+/*Taille input Ville */
+.commander .ad-client > p:nth-child(4) > span:nth-child(3) > input:nth-child(1){
+   width: 93%;
+   height: 71px;
+   border-radius: 7px;
+   margin-bottom: 5%;
+   margin-top: 5%;
+   margin-left: 5%;
+   font-family: 'Syne', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 16.39px;
+   color: #000000;
+}
+
+/*************************************************/   /*************************************************/
+/*Conteneur conteneur Bouton COMMANDER*/
+.commander .wpcf7-form > p:nth-child(5){
+   width: 100%;
+   padding-bottom: 60px;
+   padding-top: 20px;
+   margin: auto!important;
+}
 
 /*Bouton COMMANDER*/
-.wpcf7-submit{
+.commander .wpcf7-submit{
    width: 198px;
    height: 55px;
-   border: 5px;
-   margin-left: 631px;
+   border-radius: 5px;
    background-color: #E0B9B4;
    color: #FFFFFF;
    font-family: 'Syne', sans-serif;
@@ -904,5 +1363,429 @@ dl.gallery-item:nth-child(4) > dt:nth-child(1) > a:nth-child(1)
    font-size: 15px;
    line-height: 37px;
    text-align: center;
-   margin-bottom: 90px;
+}
+
+/*Bouton COMMANDER SURVOL*/
+.commander .wpcf7-submit:hover{
+   background-color: #C02E44;
+}
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./*RESPONSIVE*//*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*RESPONSIVE*/
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*//*RESPONSIVE VERSION TABLETTE*/
+/*Ecrans Tablette entre 768px à 1024px */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*//*RESPONSIVE 768px à 1024px*/
+/*Header*/
+/*Menu Header en colonne*/
+.custom-logo{
+   width: 60%;
+}
+
+#menu-menu-principale{
+   width:50%;
+   display: flex;
+   flex-direction: column;
+}
+
+#menu-menu-principale li{
+   height: 26.66px!important;
+   width: 100%!important;
+   line-height: 26.66px !important;
+}
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+/*Home*/
+/*Ce qu ils en pensent en colonne*/
+
+.home #gallery-1{
+   flex-direction: column;
+}
+
+/*Conteneur spacer*/
+.home .elementor-element-5d12a65 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+   height: 50px;
+}
+
+/*Conteneur titre*/
+.home .elementor-element-3b73ce8{
+   background-color: #FFFFFF;
+}
+
+/*Conteneur conteneur Photos + Nom + Descriptif*/
+.home .elementor-element-0e30121{
+   background-color: #FFFFFF;
+}
+
+/*Marging Top*/
+/*Véro*/
+.home dl.gallery-item:nth-child(2){
+   margin-top: 50px!important;
+}
+
+/*Marc*/
+.home dl.gallery-item:nth-child(3){
+   margin-top: 50px!important;
+}
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+/*Nous rencontrer*/
+
+/*Titre Nous rencontrer*/
+.nous-rencontrer h1.elementor-heading-title{
+   font-size: 28px!important;
+   margin-right: 100%;
+}
+
+/*Titre L'équipe*/
+.nous-rencontrer .elementor-element-62a7a90 > div:nth-child(1) > h4:nth-child(1){
+   padding-top: 20px!important;
+}
+
+/*Background Blanc L'équipe*/
+.nous-rencontrer .elementor-element-ab83a88{
+   background-image: none!important;
+   background-color: white!important;
+}
+
+/*Image feuille L'équipe*/
+.nous-rencontrer .elementor-element-1ebb1bb > div:nth-child(1) > img:nth-child(1){
+   display: none;
+}
+
+/*Fleur Image sous FORMULAIRE Nous contacter*/
+.nous-rencontrer .elementor-element-6647cc0 > div:nth-child(1) > img:nth-child(1){
+   display: none;
+}
+
+/*Supprimé Spacer*/
+.nous-rencontrer .elementor-element-f210143{
+   display: none;
+}
+
+/*Titre Nous rencontrer padding*/
+.nous-rencontrer .elementor-element-357c7ff > div:nth-child(1) > h4:nth-child(1){
+   padding-bottom: 20px;
+   padding-top: 20px;
+}
+}
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+/*Commander*/
+/*Titre Commander*/
+.commander h2.elementor-heading-title{
+   font-weight: 800!important;
+   font-size: 28px;
+}
+
+/*Titre Vos informations*/
+.commander .info-client > h4:nth-child(1){
+   font-size: 22px;
+}
+
+/*Titre Livraison*/
+.commander .ad-client > h4:nth-child(1){
+   font-size: 22px;
+}
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*RESPONSIVE*/
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*//*RESPONSIVE VERSION MOBILE*/
+/*Ecrans Mobile entre 320px à 767px */
+@media only screen and (min-width: 320px) and (max-width: 767px){
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*//*RESPONSIVE 320px à 768px*/
+/*Header*/
+.custom-logo{
+   width: 100%;
+}
+
+#menu-menu-principale{
+   display: flex;
+   flex-direction: column;
+}
+#menu-menu-principale li{
+   height: 26.66px!important;
+   width: 100%!important;
+   line-height: 26.66px !important;
+}
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+/*Home*/ 
+
+/*Conteneur padding 0*/
+.home .elementor-element-b36a5ed{
+   padding: 0!important;
+   padding-top: 0!important;
+}
+
+/*Titre H1*/
+.home h1.elementor-heading-title{
+  font-weight: 800!important;
+  font-size: 24px!important;
+}
+
+/*Supprimer feuille gauche*/
+.home .elementor-element-09150f8{
+   display: none;
+}
+
+/*Supprimer feuille droite*/
+.home .elementor-element-8ee9ce3{
+   display: none;
+}
+
+/*Agrandir canette Principal*/
+.home .elementor-element-ba57524{
+   width: 100%;
+   margin: auto;
+}
+
+/*Supprimer séparateur*/
+.home div.elementor-spacer:nth-child(2) > div:nth-child(1){
+   display: none;
+}
+
+/*Supprimer séparateur*/
+.home .e-con-inner{
+ padding-top: 0;
+}
+
+/*Agrandir espace sous L'énergie des plantes TEXTE*/
+.home div.inspect_panels--contentProperty--McE5j:nth-child(5){
+   padding-bottom: 20px;
+}
+
+/*Agrandir espace sous Les goûts TEXTE*/
+.home .elementor-element-f65e99d > div:nth-child(1) > p:nth-child(1){
+   padding: 10px;
+}
+
+/*Image Fraise + Titre*/
+.home .elementor-element-27cb8b2 > div:nth-child(1) > img:nth-child(1){
+   width: 100%;
+   margin-left: 0;
+}
+
+/*Titre*/
+.home .elementor-element-9f5b5f0 > div:nth-child(1){
+   width: 100%;
+   margin-left: 0;
+}
+
+/*Image Framboise + Titre*/
+.home .elementor-element-f6ba255 > div:nth-child(1) > img:nth-child(1){
+   width: 100%!important;
+   margin-right: 0!important;
+}
+
+/*Titre*/
+.home .elementor-element-89b88ab > div:nth-child(1){
+   width: 100%!important;
+   margin-right: 0!important;
+   padding-top: 10px;
+}
+
+/*Image Pamplemousse + Titre*/
+.home .elementor-element-77821b1 > div:nth-child(1) > img:nth-child(1){
+   width: 100%;
+   margin-left: 0;
+}
+
+/*Titre*/
+.home div.elementor-element:nth-child(7) > div:nth-child(1){
+   width: 100%;
+   margin-left: 0;
+   padding-top: 65px;
+}
+
+/*Image Citron + Titre*/
+.home .elementor-element-d08c8a8 > div:nth-child(1) > img:nth-child(1){
+   width: 100%!important;
+   margin-right: 0!important;
+}
+
+/*Titre*/
+.home div.elementor-element:nth-child(8) > div:nth-child(1){
+   width: 100%!important;
+   margin-right: 0!important;
+   padding-top: 55px;
+}
+
+/*Titre*/
+.home .elementor-element-3b73ce8 > div:nth-child(1) > h3:nth-child(1){
+   background-color: white;
+}
+
+/*Galerie Ce qu'ils enpensent en colonnes*/
+.home #gallery-1{
+  flex-direction: column;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/*Fathia conteneur*/
+.home dl.gallery-item:nth-child(2){
+   background-color: #FFFFFF;
+}
+
+/*Véro conteneur*/
+.home dl.gallery-item:nth-child(3){
+   background-color: #FFFFFF;
+}
+
+/*Marc conteneur*/
+.home dl.gallery-item:nth-child(1){
+   background-color: #FFFFFF;
+}
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+/*Nous rencontrer*/
+/*Supprimer fleur à coté du titre*/
+.nous-rencontrer .elementor-element-6a237c0{
+   display:none;
+}
+
+/*Padding 0*/
+.nous-rencontrer .elementor-element-6b542e9{
+   padding: 0;
+}
+
+/*Titre Nous rencontrer*/
+.nous-rencontrer h1.elementor-heading-title{
+   font-size: 24px!important;
+}
+
+/*Titre Nous rencontrer*/
+.nous-rencontrer .elementor-element-986747e{
+   padding-top: 0!important;
+}
+
+/*Texte Nous rencontrer*/
+.nous-rencontrer .elementor-element-4baf497{
+   height: 220px;
+}
+
+/*Background Blanc L'équipe*/
+.nous-rencontrer .elementor-element-ab83a88{
+   background-image: none!important;
+   background-color: white!important;
+}
+
+/*Titre L'équipe*/
+.nous-rencontrer .elementor-element-62a7a90 > div:nth-child(1) > h4:nth-child(1){
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+/*Espacer dans formulaire*/
+.nous-rencontrer .elementor-element-f210143{
+   display: none;
+}
+
+/*Titre Nous contacter*/
+.nous-rencontrer .elementor-element-357c7ff > div:nth-child(1) > h4:nth-child(1){
+   padding-top: 50px;
+   padding-bottom: 50px;
+}
+
+/*Supprimer feuille section l'équipe*/
+.nous-rencontrer .elementor-element-1ebb1bb > div:nth-child(1) > img:nth-child(1){
+   display: none;
+}
+
+/*Supprimer feuille section formulaire*/
+.nous-rencontrer .elementor-element-6647cc0 > div:nth-child(1) > img:nth-child(1){
+   display: none;
+}
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
+/*Commander*/
+/*Titre Commander*/
+.commander h2.elementor-heading-title{
+   font-size: 24px!important;
+   font-weight: 700!important;
+}
+
+/*Galerie images Commander*/
+.commander div.elementor-element:nth-child(4){
+   width: 100%;
+}
+
+/*Galerie images + inputs en colonnes*/                              /*ERREUR GRID !!!!!!!*/
+.commander div.elementor-element:nth-child(4) > div:nth-child(1){
+   display: grid;
+   grid-template-columns: 1fr 1fr;  
+}
+
+/*Galerie images en colonnes*/
+.commander  #gallery-1{
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+}
+
+/*Galerie Input en colonnes*/
+.commander .input{
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+}
+
+/*Taille formulaire*/
+.commander .wpcf7-form{
+   max-width: 100%;
+}
+
+/*Formulaire une colonne*/
+.commander .wpcf7-form > id\=formulaire:nth-child(4){
+   display: grid;
+   grid-template-columns: 1fr;
+   margin: auto;
+   justify-content: center;
+   width: 100%;
+   padding-top: 20px;
+}
+
+/*Supprimé séparateur*/
+.commander .vertical{
+   display: none;
+}
+
+/*Rétablisement margin formulaire ancienne colonne de droite LIVRAISON */
+.commander .ad-client > h4:nth-child(1){
+   margin-left: 5px;
+}
+
+/*Rétablisement margin formulaire ancienne colonne de droite ADRESSE*/
+.commander .ad-client > p:nth-child(2) > label:nth-child(1){
+   margin-left: 5px;
+}
+
+/*Rétablisement margin formulaire ancienne colonne de droite INPUT ADRESSE*/
+.commander .ad-client > p:nth-child(2) > span:nth-child(3) > input:nth-child(1){
+   margin-left: 5px;
+}
+
+/*Rétablisement margin formulaire ancienne colonne de droite CODE POSTAL*/
+.commander .ad-client > p:nth-child(3) > label:nth-child(1){
+   margin-left: 5px;
+}
+
+/*Rétablisement margin formulaire ancienne colonne de droite INPUT CODE POSTAL*/
+.commander .ad-client > p:nth-child(3) > span:nth-child(3) > input:nth-child(1){
+   margin-left: 5px;
+}
+
+/*Rétablisement margin formulaire ancienne colonne de droite VILLE*/
+.commander .ad-client > p:nth-child(4) > label:nth-child(1){
+   margin-left: 5px;
+}
+
+/*Rétablisement margin formulaire ancienne colonne de droite INPUT VILLE*/
+.commander .ad-client > p:nth-child(4) > span:nth-child(3) > input:nth-child(1){
+   margin-left: 5px;
+}
+
 }

@@ -30,14 +30,30 @@ add_filter('wp_nav_menu_items', 'modifier_menu_pour_utilisateur_connecte', 10, 2
 
 <?php
 // Fonction pour la typographie
-function ajout_typographie() {
+function enqueue_google_fonts() {
     // Lien de préconnexion
     echo '<link rel="preconnect" href="https://fonts.googleapis.com">';
     echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>';
-    echo '<link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600&display=swap" rel="stylesheet">';
-
     // Chargement de la typographie 
-    wp_enqueue_style('Syne', 'https://fonts.googleapis.com/css2?family=Syne:wght@500;600&display=swap');
+    wp_enqueue_style('google-fonts','https://fonts.googleapis.com/css2?family=Syne:wght@500;600&display=swap');
 }
-add_action('wp_enqueue_scripts', 'ajout_typographie');
+add_action('wp_enqueue_scripts', 'enqueue_google_fonts');
+?>
+
+<?php
+// Fonction pour ajouter class body page nous renncontrer et page commander
+function add_custom_body_class($classes) {
+    // Récupérer l'identifiant de la page actuelle
+    $page_id = get_queried_object_id();
+
+    // Récupérer le titre de la page actuelle
+    $page_title = get_the_title($page_id);
+
+    // Ajouter une classe basée sur le titre de la page ou l'identifiant
+    $classes[] = sanitize_title_with_dashes($page_title); // Utiliser le titre de la page comme classe
+
+    return $classes;
+}
+
+add_filter('body_class', 'add_custom_body_class');
 ?>
