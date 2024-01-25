@@ -407,6 +407,13 @@ p{
    bottom: 460px;
 }
 
+/*Typo Titre*/
+.home .elementor-element-9f5b5f0 > div:nth-child(1) > h1:nth-child(1){
+   font-family: 'Syne';
+   font-size: 48px;
+   font-weight: 800;
+   line-height: 57.6px;
+}
 /*Conteneur Titre pamplemousse*/
 .home .elementor-element-89b88ab > div:nth-child(1){
    width: 56.96%;
@@ -417,6 +424,14 @@ p{
 /*Placement Conteneur Titre pamplemousse*/
 .home .elementor-element-40cf025{
    bottom: 320px;
+}
+
+/*Typo Titre*/
+.home .elementor-element-40cf025 > div:nth-child(1) > h1:nth-child(1){
+   font-family: 'Syne';
+   font-size: 48px;
+   font-weight: 800;
+   line-height: 57.6px;
 }
 
 /*Conteneur Titre framboise*/
@@ -431,6 +446,14 @@ p{
    bottom: 480px;
 }
 
+/*Typo Titre*/
+.home .elementor-element-89b88ab > div:nth-child(1) > h1:nth-child(1){
+   font-family: 'Syne';
+   font-size: 48px;
+   font-weight: 800;
+   line-height: 57.6px;
+}
+
 /*Conteneur Titre citron*/
 .home .elementor-element-7fa3054 > div:nth-child(1){
    width: 56.96%;
@@ -441,6 +464,14 @@ p{
 /*Placement Conteneur Titre citron*/
 .home div.elementor-element:nth-child(8){
    bottom: 300px;
+}
+
+/*Typo Titre*/
+.home div.elementor-element:nth-child(8) > div:nth-child(1) > h1:nth-child(1){
+   font-family: 'Syne';
+   font-size: 48px;
+   font-weight: 800;
+
 }
 
 /**************************************************************************************************/
@@ -472,7 +503,7 @@ p{
    font-family: 'Syne', sans-serif;
    font-weight: 400;
    font-size: 15px;
-   line-height: 37px;
+   line-height: 33px;
 }
 
 /**************************************************************************************************/
@@ -687,6 +718,7 @@ p{
 .nous-rencontrer .elementor-element-986747e{
    order: 2;
    padding-top: 100px;
+   margin: auto;
 }
 
 /*Element Texte NOUS RENCONTRER*/
@@ -703,6 +735,7 @@ p{
    transform: rotate(290deg);
    margin-left: 170px;
    margin-top: 40px;
+   position: absolute;
 }
 
 /**************************************************************************************************/
@@ -1395,7 +1428,26 @@ input::-o-outer-spin-button {
    width: 100%!important;
    line-height: 26.66px !important;
 }
+/*Menu à droite*/
+.menu-menu-principale-container{
+   display: flex;
+  justify-content: flex-end;
+}
 
+/*Texte menu Commander*/
+#menu-item-40{
+   text-align: center;
+}
+
+/*Texte menu Nous rencontrer*/
+#menu-item-39{
+   text-align: center;
+}
+
+/*Texte menu Admin*/
+#menu-menu-principale > li:nth-child(3){
+   text-align: center;
+}
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*Home*/
 /*Ce qu ils en pensent en colonne*/
@@ -1511,6 +1563,27 @@ input::-o-outer-spin-button {
    line-height: 26.66px !important;
 }
 
+/*Menu à droite*/
+.menu-menu-principale-container{
+   display: flex;
+  justify-content: flex-end;
+}
+
+/*Texte menu Commander*/
+#menu-item-40{
+   text-align: center;
+}
+
+/*Texte menu Nous rencontrer*/
+#menu-item-39{
+   text-align: center;
+}
+
+/*Texte menu Admin*/
+#menu-menu-principale > li:nth-child(3){
+   text-align: center;
+}
+
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*Home*/ 
 
@@ -1621,6 +1694,7 @@ input::-o-outer-spin-button {
 /*Titre*/
 .home .elementor-element-3b73ce8 > div:nth-child(1) > h3:nth-child(1){
    background-color: white;
+   font-weight: 800!important;
 }
 
 /*Galerie Ce qu'ils enpensent en colonnes*/
@@ -1665,6 +1739,7 @@ input::-o-outer-spin-button {
 /*Titre Nous rencontrer*/
 .nous-rencontrer .elementor-element-986747e{
    padding-top: 0!important;
+   margin: auto;
 }
 
 /*Texte Nous rencontrer*/
