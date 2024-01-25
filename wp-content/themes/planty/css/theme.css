@@ -1552,6 +1552,11 @@ input::-o-outer-spin-button {
  padding-top: 0;
 }
 
+/*Supprimer Bordure incurvé*/
+.home .elementor-element-d6b8510{
+   display: none;
+}
+
 /*Agrandir espace sous L'énergie des plantes TEXTE*/
 .home div.inspect_panels--contentProperty--McE5j:nth-child(5){
    padding-bottom: 20px;
