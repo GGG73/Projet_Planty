@@ -336,6 +336,7 @@ p{
 énergisante composée à 100 % de produits naturels..." */
 .home .elementor-element-aec91a0{
    margin-top: 30px;
+   padding-bottom: 40px;
 }
 
 /*Texte "Planty, c’est la première boisson
@@ -346,6 +347,7 @@ p{
    font-size: 20px;
    line-height: 24px;
 }
+
 /**************************************************************************************************/
 /*Home SECTION Les goûts IMAGES*/
 
@@ -423,7 +425,7 @@ p{
 
 /*Placement Conteneur Titre pamplemousse*/
 .home .elementor-element-40cf025{
-   bottom: 320px;
+   bottom: 350px;
 }
 
 /*Typo Titre*/
@@ -463,7 +465,7 @@ p{
 
 /*Placement Conteneur Titre citron*/
 .home div.elementor-element:nth-child(8){
-   bottom: 300px;
+   bottom: 315px;
 }
 
 /*Typo Titre*/
@@ -953,6 +955,7 @@ margin: auto;
    position: relative;
    margin: auto;
    color: #FFFFFF;
+   font-family: 'Syne';
    font-size: 20px;
    font-weight: 800;
    line-height: 24px;
@@ -966,6 +969,7 @@ margin: auto;
    position: relative;
    margin: auto;
    color: #FFFFFF;
+   font-family: 'Syne';
    font-size: 20px;
    font-weight: 800;
    line-height: 24px;
@@ -979,6 +983,7 @@ margin: auto;
    position: relative;
    margin: auto;
    color: #FFFFFF;
+   font-family: 'Syne';
    font-size: 20px;
    font-weight: 800;
    line-height: 24px;
@@ -992,6 +997,7 @@ margin: auto;
    position: relative;
    margin: auto;
    color: #FFFFFF;
+   font-family: 'Syne';
    font-size: 20px;
    font-weight: 800;
    line-height: 24px;
@@ -1382,7 +1388,14 @@ input::-o-outer-spin-button {
    padding-bottom: 60px;
    padding-top: 20px;
    margin: auto!important;
+   text-align: center;
 }
+
+/*Supprimer élement*/
+.commander .wpcf7-spinner{
+   display: none;
+}
+
 
 /*Bouton COMMANDER*/
 .commander .wpcf7-submit{
@@ -1403,6 +1416,37 @@ input::-o-outer-spin-button {
    background-color: #C02E44;
 }
 
+.commander .elementor{
+   background-color: #3B8E46;
+}
+
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./*RESPONSIVE*//*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*RESPONSIVE*/
+/*Ecrans entre 1025px à 1300px */
+@media only screen and (min-width: 1025px) and (max-width: 1300px){
+
+/*Home Titre Fraise*/
+.home .elementor-element-9f5b5f0 > div:nth-child(1) > h1:nth-child(1){
+   font-size: 33px!important;
+}
+
+/*Home Titre Pamplemousse*/
+.home .elementor-element-89b88ab > div:nth-child(1) > h1:nth-child(1){
+   font-size: 33px!important;
+}
+
+/*Home Titre Framboise*/
+.home .elementor-element-40cf025 > div:nth-child(1) > h1:nth-child(1){
+   font-size: 33px!important;
+}
+
+/*Home Titre Citron*/
+.home div.elementor-element:nth-child(8) > div:nth-child(1) > h1:nth-child(1){
+   font-size: 33px!important;
+}
+}
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./*RESPONSIVE*//*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
@@ -1449,9 +1493,30 @@ input::-o-outer-spin-button {
    text-align: center;
 }
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
-/*Home*/
-/*Ce qu ils en pensent en colonne*/
+/*HOME*/
 
+/*Home Titre Fraise*/
+.home .elementor-element-9f5b5f0 > div:nth-child(1) > h1:nth-child(1){
+   font-size: 28px!important;
+}
+
+/*Home Titre Pamplemousse*/
+.home .elementor-element-89b88ab > div:nth-child(1) > h1:nth-child(1){
+   font-size: 28px!important;
+}
+
+/*Home Titre Framboise*/
+.home .elementor-element-40cf025 > div:nth-child(1) > h1:nth-child(1){
+   font-size: 28px!important;
+}
+
+/*Home Titre Citron*/
+.home div.elementor-element:nth-child(8) > div:nth-child(1) > h1:nth-child(1){
+   font-size: 28px!important;
+}
+
+/*Ce qu ils en pensent en colonne*/
+/*Galerie*/
 .home #gallery-1{
    flex-direction: column;
 }
@@ -1522,7 +1587,7 @@ input::-o-outer-spin-button {
    padding-bottom: 20px;
    padding-top: 20px;
 }
-}
+
 
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*Commander*/
@@ -1540,8 +1605,25 @@ input::-o-outer-spin-button {
 /*Titre Livraison*/
 .commander .ad-client > h4:nth-child(1){
    font-size: 22px;
+} 
+
+/*Taille séparateur horizontal*/
+.commander .elementor-element-ba5cf68 > div:nth-child(1){
+   width: 80%!important;
 }
 
+/*Taille Galerie + input 80%*/
+.commander div.elementor-element:nth-child(4){
+   width: 80%!important;
+}
+
+/*Taille formulaire 80%*/
+.commander .wpcf7-form{
+   max-width: 80%;
+}
+}
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./*RESPONSIVE*//*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
 /*RESPONSIVE*/
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*//*RESPONSIVE VERSION MOBILE*/
@@ -1585,7 +1667,7 @@ input::-o-outer-spin-button {
 }
 
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
-/*Home*/ 
+/*HOME*/ 
 
 /*Conteneur padding 0*/
 .home .elementor-element-b36a5ed{
@@ -1695,6 +1777,55 @@ input::-o-outer-spin-button {
 .home .elementor-element-3b73ce8 > div:nth-child(1) > h3:nth-child(1){
    background-color: white;
    font-weight: 800!important;
+}
+/*Home Titre Fraise*/
+.home .elementor-element-9f5b5f0 > div:nth-child(1) > h1:nth-child(1){
+   font-size: 20px!important;
+   font-weight: 400!important;
+}
+
+/*Home Titre Pamplemousse*/
+.home .elementor-element-89b88ab > div:nth-child(1) > h1:nth-child(1){
+   font-size: 20px!important;
+   font-weight: 400!important;
+}
+
+/*Home Titre Framboise*/
+.home .elementor-element-40cf025 > div:nth-child(1) > h1:nth-child(1){
+   font-size: 20px!important;
+   font-weight: 400!important;
+}
+
+/*Home Titre Citron*/
+.home div.elementor-element:nth-child(8) > div:nth-child(1) > h1:nth-child(1){
+   font-size: 20px!important;
+   font-weight: 400!important;
+}
+
+/*Home Titre Fraise placement OK*/
+
+/*Home Titre Pamplemousse placement*/
+.home .elementor-element-89b88ab > div:nth-child(1){
+   padding-top: 0;
+}
+/*Home Titre Framboises placement*/
+.home .elementor-element-40cf025 > div:nth-child(1){
+   padding-top: 10px!important;
+}
+/*Home Titre Citron placement*/
+.home div.elementor-element:nth-child(8) > div:nth-child(1){
+   padding-top: 23px;
+}
+
+
+/*Espaceur*/
+.home .elementor-element-5d12a65 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+   display: none;
+}
+
+/*Espaceur*/
+.home .elementor-element-5d12a65{
+   display: none;
 }
 
 /*Galerie Ce qu'ils enpensent en colonnes*/
@@ -1867,5 +1998,4 @@ input::-o-outer-spin-button {
 .commander .ad-client > p:nth-child(4) > span:nth-child(3) > input:nth-child(1){
    margin-left: 5px;
 }
-
 }
