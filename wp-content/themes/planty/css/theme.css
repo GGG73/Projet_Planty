@@ -1385,7 +1385,6 @@ input::-o-outer-spin-button {
 /*Conteneur conteneur Bouton COMMANDER*/
 .commander .wpcf7-form > p:nth-child(5){
    width: 100%;
-   padding-bottom: 60px;
    padding-top: 20px;
    margin: auto!important;
    text-align: center;
@@ -1673,8 +1672,12 @@ input::-o-outer-spin-button {
 .home .elementor-element-b36a5ed{
    padding: 0!important;
    padding-top: 0!important;
-}
+} 
 
+/*Conteneur padding top 40px*/
+.home .elementor-element-2bc2b43 > div:nth-child(1){
+   padding-top: 40px;
+}
 /*Titre H1*/
 .home h1.elementor-heading-title{
   font-weight: 800!important;
@@ -1695,6 +1698,11 @@ input::-o-outer-spin-button {
 .home .elementor-element-ba57524{
    width: 100%;
    margin: auto;
+}
+
+/*Padding bottom canette Principal*/
+.home .elementor-element-ba57524 > div:nth-child(1) > img:nth-child(1){
+   padding-bottom: 30px;
 }
 
 /*Supprimer séparateur*/
@@ -1916,7 +1924,18 @@ input::-o-outer-spin-button {
 /*Titre Commander*/
 .commander h2.elementor-heading-title{
    font-size: 24px!important;
-   font-weight: 700!important;
+   font-weight: 800!important;
+}
+
+
+/*Separateur horizontal épaisseur 1.5px*/
+.commander .elementor-divider-separator{
+   height: 1.5px;
+}
+
+/*Titre Votre commande*/
+.commander .elementor-divider{
+   margin-bottom: 0;
 }
 
 /*Galerie images Commander*/
@@ -1924,15 +1943,21 @@ input::-o-outer-spin-button {
    width: 100%;
 }
 
-/*Galerie images + inputs en colonnes*/                              /*ERREUR GRID !!!!!!!*/
+/*Galerie images en colonnes*/                             
 .commander div.elementor-element:nth-child(4) > div:nth-child(1){
    display: grid;
-   grid-template-columns: 1fr 1fr;  
+   grid-template-columns: 1fr ;  
+}
+
+/*Galerie images élargie*/                             
+.commander dl.gallery-item:nth-child(1),dl.gallery-item:nth-child(2),dl.gallery-item:nth-child(3),dl.gallery-item:nth-child(4){
+   width: 80%!important;
+   padding-top: 0!important;
 }
 
 /*Galerie images en colonnes*/
 .commander  #gallery-1{
-   width: 50%;
+   width: 100%;
    display: flex;
    flex-direction: column;
 }
@@ -1942,6 +1967,40 @@ input::-o-outer-spin-button {
    width: 50%;
    display: flex;
    flex-direction: column;
+   z-index: 2;
+   position: relative;
+   margin-left: 60%;
+}
+
+/*Titre Input Fraise*/
+.commander #gallery-1-25{
+   padding-right: 50%;
+   bottom: -530px;
+}
+
+
+/*Titre Input Pamplemousse*/
+.commander #gallery-1-19{
+   padding-right: 50%;
+   bottom: -440px;
+}
+
+/*Titre Input Framboise BR supprimé*/
+.commander #gallery-1-34 > br:nth-child(1){
+   display: none;
+}
+
+/*Titre Input Framboise*/
+.commander #gallery-1-34{
+   padding-right: 70%;
+   bottom: -342px;
+}
+
+
+/*Titre Input Citron*/
+.commander #gallery-1-18{
+   padding-right: 50%;
+   bottom: -260px;
 }
 
 /*Taille formulaire*/
@@ -1957,6 +2016,16 @@ input::-o-outer-spin-button {
    justify-content: center;
    width: 100%;
    padding-top: 20px;
+}
+
+/*1er Séparateur horizontal largeur max*/
+.commander .elementor-element-ba5cf68 > div:nth-child(1){
+   width: 80%!important;
+}
+
+/*2eme Séparateur horizontal largeur max*/
+.commander .separateurH{
+   max-width: 80%!important;
 }
 
 /*Supprimé séparateur*/
