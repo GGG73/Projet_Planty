@@ -1,18 +1,9 @@
-/*CSS**GENERALE**HEADER*FOOTER*HOME*NOUS RENCONTRER*COMMANDER* RESPONSIVE**/
+/*CSS* *GENERALE* *HEADER* *FOOTER* *HOME* *NOUS RENCONTRER* *COMMANDER* *RESPONSIVE*/
+
+/*Aide Bordure*/
 /*{
    border: solid 1px blue !important;
 }
-
-/*Format PARAGRAPHE P tout le texte!! SIZE DIFF: Header Footer*/
-
-/*Format H4 H5  sous titre HOME: "L'énergie des plantes, Fatiha, Vero, Marc.
- RENCONTRER: L'équipe, Nous contacter, H5  SIZE DIFF: Mégane, Brooke, Sylvie.
- COMMANDER: Votre commande, Vos informations, Livraison */
-
-/*Format H2 Page Nous rencontrer Commander (Titre H1bis)
- H3 "Les goûts, Ce qu'ils pensent */
-
-/*Format H1 Page Home (dédié uniquement titre Principale + Titre Image Fraise Pamplemousse....!!) */
 
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./*GENERALE*//*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
@@ -102,9 +93,12 @@ p{
    align-items: center;
    width: 100%;
 }
+
+/*Header conteneur*/
 #header .container{
    width: 50%;
 }
+
 /*Conteneur logo*/
 .custom-logo{
    width: 40%;
@@ -224,6 +218,7 @@ p{
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./*FOOTER*//*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
 /*FOOTER*/
+
 /*Conteneur Footer*/
 #site-footer {
    width: 100%;
@@ -248,14 +243,12 @@ p{
    color: #000000;
 }
 
-
-
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./*HOME*//*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
 /*HOME*/
-/*Home SECTION image canette*/
 
+/*Home SECTION image canette*/
 /*Conteneur image principal*/
 .home #container{
    width: 100%;
@@ -329,8 +322,6 @@ p{
 
 /**************************************************************************************************/
 /*Home SECTION L'énergie des plantes*/
-
-
 
 /*Texte palcement "Planty, c’est la première boisson
 énergisante composée à 100 % de produits naturels..." */
@@ -416,6 +407,7 @@ p{
    font-weight: 800;
    line-height: 57.6px;
 }
+
 /*Conteneur Titre pamplemousse*/
 .home .elementor-element-89b88ab > div:nth-child(1){
    width: 56.96%;
@@ -573,7 +565,6 @@ p{
 /*Texte Nom FATIHA*/
 .home #gallery-1-30 > h4:nth-child(1){
    color: #3B8E46;
-  
    width: 100%;
 }
 
@@ -617,7 +608,6 @@ p{
 /*Texte Nom VERO*/
 .home #gallery-1-31 > h4:nth-child(1){
    color: #3B8E46;
- 
    width: 100%;
 }
 
@@ -707,7 +697,8 @@ p{
 /*SECTION Titre + Image Fleur*/
 /*Placement Titre*/
 .nous-rencontrer h1.elementor-heading-title:nth-child(2){
-   margin-top: 20px;
+   margin-top: 50px;
+   padding-bottom: 10px;
 }
 
 /*Conteneur Nous rencontrer + fleur*/
@@ -754,6 +745,11 @@ p{
    padding: 0;
 }
 
+/*Conteneur Background blanc arrondi*/
+.nous-rencontrer .elementor-element-ab83a88{
+   background-size: cover;
+}
+
 /*Conteneur L'EQUIPE Image + Nom + Texte*/
 .nous-rencontrer .elementor-element-0875e95{
    padding: 0;
@@ -788,7 +784,6 @@ p{
 .nous-rencontrer .nf-form-content{
    padding: 0;
 }
-
 
 /*SUPPRIMER Titre FORMULAIRE*/
 .nous-rencontrer #nf-form-title-2{
@@ -856,6 +851,12 @@ p{
    margin:auto;
 }
 
+/*Votre message a bien été envoyer*/
+.nous-rencontrer .nf-response-msg > p:nth-child(1){
+   text-align: center;
+   font-weight: 700;
+}
+
 /*Supprimer espace*/
 .nous-rencontrer #nf-form-errors-2{
    display: none;
@@ -872,6 +873,7 @@ p{
 .nous-rencontrer .elementor-element-6647cc0 > div:nth-child(1) > img:nth-child(1){
    width: 100%;
 }
+
 .nous-rencontrer .elementor-element-6647cc0 > div:nth-child(1){
    width: 147.32px;
    height: 134.97px;
@@ -886,6 +888,7 @@ p{
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./*COMMANDER*//*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
 /*COMMANDER*/
+
 /*Conteneur Padding 0*/
 .commander .elementor-element-f97b15a{
    padding: 0!important;
@@ -896,7 +899,6 @@ p{
    padding: 0;
    bottom: 45px;
 }
-
 
 /*Conteneur Titre*/
 .commander .elementor-element-eed2b19 > div:nth-child(1){
@@ -935,7 +937,7 @@ p{
    margin-left: 20%;
 }
 
-/*************************************************/   /*************************************************/
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*Conteneur conteneur Taille formulaire Commande image fruit*/
 .commander div.elementor-element:nth-child(4){
 width: 59.72%;
@@ -1055,7 +1057,7 @@ margin: auto;
    margin: auto;
 }
 
-/*************************************************/   /*************************************************/
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*Conteneur Input + formulaire*/
 .commander #wpcf7-f570-p13-o1{
    width: 100%;
@@ -1163,7 +1165,9 @@ margin: auto;
    display: none;
 }
 
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*Supprimer les flèches des inputs number*/
+
 /* Firefox */
 input[type=number] {
    -moz-appearance: textfield;
@@ -1184,7 +1188,7 @@ input::-o-outer-spin-button {
    margin:0
 }
    
-/*************************************************/   /*************************************************/
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*Séparateur horizontal sous input commande*/
 .commander .separateurH{
    width: 100%;
@@ -1193,6 +1197,7 @@ input::-o-outer-spin-button {
    margin-bottom: 30px;
 }
 
+/*Séparateur horizontal sous input commande*/
 .commander .horizontal{
    width: 100%!important;
 }
@@ -1206,6 +1211,7 @@ input::-o-outer-spin-button {
    width: 100%;
    padding-top: 20px;
 }
+
 /*Taille colonne Gauche*/
 .commander .info-client{
    width: 100%;
@@ -1240,7 +1246,7 @@ input::-o-outer-spin-button {
    border: 7px;
 }
 
-/*************************************************/   /*************************************************/
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*Marge bottom Titre Vos infos*/
 .commander .info-client > h4:nth-child(1){
    margin-bottom: 20px;
@@ -1290,7 +1296,7 @@ input::-o-outer-spin-button {
    margin-bottom: 10%;
 }
 
-/*************************************************/  /*************************************************/
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*Taille input Nom */
 .commander .info-client > p:nth-child(2) > span:nth-child(3) > input:nth-child(1){
    width: 93%;
@@ -1381,11 +1387,12 @@ input::-o-outer-spin-button {
    color: #000000;
 }
 
-/*************************************************/   /*************************************************/
+/*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*Conteneur conteneur Bouton COMMANDER*/
 .commander .wpcf7-form > p:nth-child(5){
    width: 100%;
    padding-top: 20px;
+   padding-bottom: 40px;
    margin: auto!important;
    text-align: center;
 }
@@ -1394,7 +1401,6 @@ input::-o-outer-spin-button {
 .commander .wpcf7-spinner{
    display: none;
 }
-
 
 /*Bouton COMMANDER*/
 .commander .wpcf7-submit{
@@ -1423,6 +1429,7 @@ input::-o-outer-spin-button {
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./*RESPONSIVE*//*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
 /*RESPONSIVE*/
+
 /*Ecrans entre 1025px à 1300px */
 @media only screen and (min-width: 1025px) and (max-width: 1300px){
 
@@ -1446,6 +1453,7 @@ input::-o-outer-spin-button {
    font-size: 33px!important;
 }
 }
+
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./*RESPONSIVE*//*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
@@ -1455,6 +1463,7 @@ input::-o-outer-spin-button {
 @media only screen and (min-width: 768px) and (max-width: 1024px){
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*//*RESPONSIVE 768px à 1024px*/
 /*Header*/
+
 /*Menu Header en colonne*/
 .custom-logo{
    width: 60%;
@@ -1491,6 +1500,7 @@ input::-o-outer-spin-button {
 #menu-menu-principale > li:nth-child(3){
    text-align: center;
 }
+
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*HOME*/
 
@@ -1550,9 +1560,20 @@ input::-o-outer-spin-button {
 /*Nous rencontrer*/
 
 /*Titre Nous rencontrer*/
+.nous-rencontrer .elementor-element-986747e{
+   padding-top: 40px;
+}
+/*Titre Nous rencontrer*/
 .nous-rencontrer h1.elementor-heading-title{
    font-size: 28px!important;
    margin-right: 100%;
+   margin-bottom: 20px;
+}
+
+/*Imaghe Fleur*/
+.nous-rencontrer .elementor-element-6a237c0{
+   margin-left: 537px;
+   margin-top: 5px;
 }
 
 /*Titre L'équipe*/
@@ -1587,9 +1608,9 @@ input::-o-outer-spin-button {
    padding-top: 20px;
 }
 
-
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*Commander*/
+
 /*Titre Commander*/
 .commander h2.elementor-heading-title{
    font-weight: 800!important;
@@ -1621,6 +1642,7 @@ input::-o-outer-spin-button {
    max-width: 80%;
 }
 }
+
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./*RESPONSIVE*//*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
@@ -1630,14 +1652,19 @@ input::-o-outer-spin-button {
 @media only screen and (min-width: 320px) and (max-width: 767px){
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*//*RESPONSIVE 320px à 768px*/
 /*Header*/
+
+/*Logo Header*/
 .custom-logo{
    width: 100%;
 }
 
+/*Menu Header*/
 #menu-menu-principale{
    display: flex;
    flex-direction: column;
 }
+
+/*Menu Nav*/
 #menu-menu-principale li{
    height: 26.66px!important;
    width: 100%!important;
@@ -1789,25 +1816,25 @@ input::-o-outer-spin-button {
 /*Home Titre Fraise*/
 .home .elementor-element-9f5b5f0 > div:nth-child(1) > h1:nth-child(1){
    font-size: 20px!important;
-   font-weight: 400!important;
+   font-weight: 700!important;
 }
 
 /*Home Titre Pamplemousse*/
 .home .elementor-element-89b88ab > div:nth-child(1) > h1:nth-child(1){
    font-size: 20px!important;
-   font-weight: 400!important;
+   font-weight: 700!important;
 }
 
 /*Home Titre Framboise*/
 .home .elementor-element-40cf025 > div:nth-child(1) > h1:nth-child(1){
    font-size: 20px!important;
-   font-weight: 400!important;
+   font-weight: 700!important;
 }
 
 /*Home Titre Citron*/
 .home div.elementor-element:nth-child(8) > div:nth-child(1) > h1:nth-child(1){
    font-size: 20px!important;
-   font-weight: 400!important;
+   font-weight: 700!important;
 }
 
 /*Home Titre Fraise placement OK*/
@@ -1816,15 +1843,16 @@ input::-o-outer-spin-button {
 .home .elementor-element-89b88ab > div:nth-child(1){
    padding-top: 0;
 }
+
 /*Home Titre Framboises placement*/
 .home .elementor-element-40cf025 > div:nth-child(1){
    padding-top: 10px!important;
 }
+
 /*Home Titre Citron placement*/
 .home div.elementor-element:nth-child(8) > div:nth-child(1){
    padding-top: 23px;
 }
-
 
 /*Espaceur*/
 .home .elementor-element-5d12a65 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
@@ -1860,6 +1888,7 @@ input::-o-outer-spin-button {
 
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*Nous rencontrer*/
+
 /*Supprimer fleur à coté du titre*/
 .nous-rencontrer .elementor-element-6a237c0{
    display:none;
@@ -1873,6 +1902,7 @@ input::-o-outer-spin-button {
 /*Titre Nous rencontrer*/
 .nous-rencontrer h1.elementor-heading-title{
    font-size: 24px!important;
+   margin-bottom: 30px;
 }
 
 /*Titre Nous rencontrer*/
@@ -1921,12 +1951,12 @@ input::-o-outer-spin-button {
 
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*Commander*/
+
 /*Titre Commander*/
 .commander h2.elementor-heading-title{
    font-size: 24px!important;
    font-weight: 800!important;
 }
-
 
 /*Separateur horizontal épaisseur 1.5px*/
 .commander .elementor-divider-separator{
@@ -1978,7 +2008,6 @@ input::-o-outer-spin-button {
    bottom: -530px;
 }
 
-
 /*Titre Input Pamplemousse*/
 .commander #gallery-1-19{
    padding-right: 50%;
@@ -1995,7 +2024,6 @@ input::-o-outer-spin-button {
    padding-right: 70%;
    bottom: -342px;
 }
-
 
 /*Titre Input Citron*/
 .commander #gallery-1-18{
@@ -2014,7 +2042,7 @@ input::-o-outer-spin-button {
    grid-template-columns: 1fr;
    margin: auto;
    justify-content: center;
-   width: 100%;
+   width: 80%;
    padding-top: 20px;
 }
 

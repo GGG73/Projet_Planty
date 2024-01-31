@@ -1,4 +1,5 @@
 <?php
+    // Fonction pour chargere les styles
 add_action('wp_enqueue_scripts','theme_enqueue_styles');
 function theme_enqueue_styles()
 {
@@ -41,7 +42,7 @@ add_action('wp_enqueue_scripts', 'enqueue_google_fonts');
 ?>
 
 <?php
-// Fonction pour ajouter class body page nous renncontrer et page commander
+// Fonction pour ajouter class body page nous rencontrer et page commander
 function add_custom_body_class($classes) {
     // Récupérer l'identifiant de la page actuelle
     $page_id = get_queried_object_id();
