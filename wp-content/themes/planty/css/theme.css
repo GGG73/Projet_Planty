@@ -248,6 +248,16 @@ p{
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*./
 /*HOME*/
 
+/*Conteneur Séparateur arrondi*/
+.home .elementor-element-e872f88{
+   position: relative;
+   background: #ECE2DA;
+   height: 40vh;
+   border-bottom-left-radius: 50% 20%;
+   border-bottom-right-radius: 50% 20%;
+   border-bottom: 12px solid#E3D9D0;
+}
+
 /*Home SECTION image canette*/
 /*Conteneur image principal*/
 .home #container{
@@ -946,6 +956,7 @@ margin: auto;
 
 /*Conteneur formulaire Commande*/
 .commander #gallery-1{
+   display: flex;
    justify-content: space-between;
    margin-top: 20px;
 }
@@ -1433,6 +1444,16 @@ input::-o-outer-spin-button {
 /*Ecrans entre 1025px à 1300px */
 @media only screen and (min-width: 1025px) and (max-width: 1300px){
 
+/*Conteneur Séparateur arrondi*/
+.home .elementor-element-e872f88{
+   position: relative;
+   background: #ECE2DA;
+   height: 30vh;
+   border-bottom-left-radius: 50% 20%;
+   border-bottom-right-radius: 50% 20%;
+   border-bottom: 12px solid#E3D9D0;
+}
+
 /*Home Titre Fraise*/
 .home .elementor-element-9f5b5f0 > div:nth-child(1) > h1:nth-child(1){
    font-size: 33px!important;
@@ -1451,6 +1472,12 @@ input::-o-outer-spin-button {
 /*Home Titre Citron*/
 .home div.elementor-element:nth-child(8) > div:nth-child(1) > h1:nth-child(1){
    font-size: 33px!important;
+}
+
+/*Fleur Image sous FORMULAIRE Nous contacter*/
+.nous-rencontrer .elementor-element-6647cc0 > div:nth-child(1) > img:nth-child(1){
+   padding-top: 260px;
+ 
 }
 }
 
@@ -1504,9 +1531,24 @@ input::-o-outer-spin-button {
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*HOME*/
 
+/*Conteneur Séparateur arrondi*/
+.home .elementor-element-e872f88{
+   position: relative;
+   background: #ECE2DA;
+   height: 30vh;
+   border-bottom-left-radius: 50% 20%;
+   border-bottom-right-radius: 50% 20%;
+   border-bottom: 12px solid#E3D9D0;
+}
+
 /*Home Titre Fraise*/
 .home .elementor-element-9f5b5f0 > div:nth-child(1) > h1:nth-child(1){
    font-size: 28px!important;
+   
+}
+/*Home Titre Fraise*/
+.home .elementor-element-9f5b5f0 > div:nth-child(1){
+   margin-left: 25%!important;
 }
 
 /*Home Titre Pamplemousse*/
@@ -1514,14 +1556,56 @@ input::-o-outer-spin-button {
    font-size: 28px!important;
 }
 
+/*Home Titre Pamplemousse*/
+.home .elementor-element-89b88ab > div:nth-child(1){
+   margin-left: 25%!important;
+}
+
 /*Home Titre Framboise*/
 .home .elementor-element-40cf025 > div:nth-child(1) > h1:nth-child(1){
    font-size: 28px!important;
 }
 
+/*Home Titre Framboise*/
+.home .elementor-element-40cf025 > div:nth-child(1){
+   margin-left: 25%!important;
+}
+
 /*Home Titre Citron*/
 .home div.elementor-element:nth-child(8) > div:nth-child(1) > h1:nth-child(1){
    font-size: 28px!important;
+}
+
+/*Home Titre Citron*/
+.home div.elementor-element:nth-child(8) > div:nth-child(1){
+   margin-left: 25%!important;
+}
+/*Image Fraise*/
+.home .elementor-element-27cb8b2 > div:nth-child(1) > img:nth-child(1){
+   width: 100%;
+  height: 100%;
+  margin-left: 2%;
+}
+
+/*Image Pamplemousse*/
+.home .elementor-element-f6ba255 > div:nth-child(1) > img:nth-child(1){
+   width: 100%;
+  height: 100%;
+  margin-right: 2%;
+}
+
+/*Image Framboise*/
+.home .elementor-element-77821b1 > div:nth-child(1) > img:nth-child(1){
+   width: 100%;
+  height: 100%;
+  margin-left: 2%;
+}
+
+/*Image Citron*/
+.home .elementor-element-d08c8a8 > div:nth-child(1) > img:nth-child(1){
+   width: 100%;
+  height: 100%;
+  margin-right: 2%;
 }
 
 /*Ce qu ils en pensent en colonne*/
@@ -1589,12 +1673,15 @@ input::-o-outer-spin-button {
 
 /*Image feuille L'équipe*/
 .nous-rencontrer .elementor-element-1ebb1bb > div:nth-child(1) > img:nth-child(1){
-   display: none;
+   width: 50%;
+   padding-top: 70px;
+
 }
 
 /*Fleur Image sous FORMULAIRE Nous contacter*/
 .nous-rencontrer .elementor-element-6647cc0 > div:nth-child(1) > img:nth-child(1){
-   display: none;
+   padding-top: 310px;
+ 
 }
 
 /*Supprimé Spacer*/
@@ -1632,14 +1719,25 @@ input::-o-outer-spin-button {
    width: 80%!important;
 }
 
+/*Conteneur formulaire Commande*/
+.commander #gallery-1{
+   display: flex;
+   justify-content: space-between;
+}
+
 /*Taille Galerie + input 80%*/
 .commander div.elementor-element:nth-child(4){
-   width: 80%!important;
+   width: 90%!important;
 }
 
 /*Taille formulaire 80%*/
 .commander .wpcf7-form{
-   max-width: 80%;
+   max-width: 90%;
+}
+
+/*Taille formulaire 80%*/
+.commander dl.gallery-item:nth-child(1){
+   width: 24%!important;
 }
 }
 
@@ -1695,6 +1793,16 @@ input::-o-outer-spin-button {
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
 /*HOME*/ 
 
+/*Conteneur Séparateur arrondi*/
+.home .elementor-element-e872f88{
+   position: relative;
+   background: #ECE2DA;
+   height: 35vh;
+   border-bottom-left-radius: 50% 20%;
+   border-bottom-right-radius: 50% 20%;
+   border-bottom: 12px solid#E3D9D0;
+}
+
 /*Conteneur padding 0*/
 .home .elementor-element-b36a5ed{
    padding: 0!important;
@@ -1711,14 +1819,12 @@ input::-o-outer-spin-button {
   font-size: 24px!important;
 }
 
-/*Supprimer feuille gauche*/
-.home .elementor-element-09150f8{
-   display: none;
-}
+
 
 /*Supprimer feuille droite*/
-.home .elementor-element-8ee9ce3{
-   display: none;
+.home .elementor-element-09150f8 > div:nth-child(1) > img:nth-child(1){
+   margin-left: 150%!important;
+   bottom: 718px;
 }
 
 /*Agrandir canette Principal*/
@@ -1727,10 +1833,7 @@ input::-o-outer-spin-button {
    margin: auto;
 }
 
-/*Padding bottom canette Principal*/
-.home .elementor-element-ba57524 > div:nth-child(1) > img:nth-child(1){
-   padding-bottom: 30px;
-}
+
 
 /*Supprimer séparateur*/
 .home div.elementor-spacer:nth-child(2) > div:nth-child(1){
@@ -1757,9 +1860,17 @@ input::-o-outer-spin-button {
    padding: 10px;
 }
 
+/*conteneur galerie 4 images*/
+.home .elementor-element-566e9c9{
+   width: 100%;
+   height: 280px;
+  
+}
+
 /*Image Fraise + Titre*/
 .home .elementor-element-27cb8b2 > div:nth-child(1) > img:nth-child(1){
-   width: 100%;
+   width: 100%!important;
+   height: 100%!important;
    margin-left: 0;
 }
 
@@ -1772,6 +1883,7 @@ input::-o-outer-spin-button {
 /*Image Framboise + Titre*/
 .home .elementor-element-f6ba255 > div:nth-child(1) > img:nth-child(1){
    width: 100%!important;
+   height: 100%!important;
    margin-right: 0!important;
 }
 
@@ -1784,7 +1896,8 @@ input::-o-outer-spin-button {
 
 /*Image Pamplemousse + Titre*/
 .home .elementor-element-77821b1 > div:nth-child(1) > img:nth-child(1){
-   width: 100%;
+   width: 100%!important;
+   height: 100%!important;
    margin-left: 0;
 }
 
@@ -1798,6 +1911,7 @@ input::-o-outer-spin-button {
 /*Image Citron + Titre*/
 .home .elementor-element-d08c8a8 > div:nth-child(1) > img:nth-child(1){
    width: 100%!important;
+   height: 100%!important;
    margin-right: 0!important;
 }
 
@@ -1813,6 +1927,8 @@ input::-o-outer-spin-button {
    background-color: white;
    font-weight: 800!important;
 }
+
+
 /*Home Titre Fraise*/
 .home .elementor-element-9f5b5f0 > div:nth-child(1) > h1:nth-child(1){
    font-size: 20px!important;
@@ -1826,9 +1942,19 @@ input::-o-outer-spin-button {
 }
 
 /*Home Titre Framboise*/
+.home  .elementor-element-40cf025{
+   bottom: 500px;
+}
+
+/*Home Titre Framboise*/
 .home .elementor-element-40cf025 > div:nth-child(1) > h1:nth-child(1){
    font-size: 20px!important;
    font-weight: 700!important;
+}
+
+/*Home Titre Citron*/
+.home div.elementor-element:nth-child(8){
+   bottom: 510px;
 }
 
 /*Home Titre Citron*/
@@ -1838,21 +1964,20 @@ input::-o-outer-spin-button {
 }
 
 /*Home Titre Fraise placement OK*/
+.home .elementor-element-9f5b5f0 > div:nth-child(1) > h1:nth-child(1){
+   padding-top: 250px!important;
+}
 
 /*Home Titre Pamplemousse placement*/
 .home .elementor-element-89b88ab > div:nth-child(1){
-   padding-top: 0;
+   padding-top: 240px;
 }
 
 /*Home Titre Framboises placement*/
 .home .elementor-element-40cf025 > div:nth-child(1){
-   padding-top: 10px!important;
+   padding-top: 0px!important;
 }
 
-/*Home Titre Citron placement*/
-.home div.elementor-element:nth-child(8) > div:nth-child(1){
-   padding-top: 23px;
-}
 
 /*Espaceur*/
 .home .elementor-element-5d12a65 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
@@ -1891,7 +2016,8 @@ input::-o-outer-spin-button {
 
 /*Supprimer fleur à coté du titre*/
 .nous-rencontrer .elementor-element-6a237c0{
-   display:none;
+  margin-left: 20px;
+  margin-top: 5px;
 }
 
 /*Padding 0*/
@@ -1941,12 +2067,15 @@ input::-o-outer-spin-button {
 
 /*Supprimer feuille section l'équipe*/
 .nous-rencontrer .elementor-element-1ebb1bb > div:nth-child(1) > img:nth-child(1){
-   display: none;
+   width: 60%;
+  padding-top: 660px;
+  margin-left: 80px;
 }
 
 /*Supprimer feuille section formulaire*/
 .nous-rencontrer .elementor-element-6647cc0 > div:nth-child(1) > img:nth-child(1){
-   display: none;
+   padding-top: 550px;
+   right:100px;
 }
 
 /*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*/
@@ -1990,6 +2119,7 @@ input::-o-outer-spin-button {
    width: 100%;
    display: flex;
    flex-direction: column;
+   justify-content: space-between;
 }
 
 /*Galerie Input en colonnes*/
@@ -2002,33 +2132,72 @@ input::-o-outer-spin-button {
    margin-left: 60%;
 }
 
+/*Image Fraise*/
+.commander dl.gallery-item:nth-child(1) > dt:nth-child(1) > a:nth-child(1) > img:nth-child(1){
+   width: 100%;
+  height: 100%;
+}
+
+/*Image Pamplemousse*/
+.commander dl.gallery-item:nth-child(2) > dt:nth-child(1) > a:nth-child(1) > img:nth-child(1){
+   width: 100%;
+  height: 100%;
+}
+
+/*Image Framboise*/
+.commander dl.gallery-item:nth-child(3) > dt:nth-child(1) > a:nth-child(1) > img:nth-child(1){
+   width: 100%;
+  height: 100%;
+}
+
+/*Image Citron*/
+.commander dl.gallery-item:nth-child(4) > dt:nth-child(1) > a:nth-child(1) > img:nth-child(1){
+   width: 100%;
+  height: 100%;
+}
+
 /*Titre Input Fraise*/
 .commander #gallery-1-25{
-   padding-right: 50%;
-   bottom: -530px;
+   bottom: 130px;
+}
+
+.commander .input > p:nth-child(1) > span:nth-child(3) > input:nth-child(1){
+   bottom: 970px;
+  position: relative;
+  right: 5px;
 }
 
 /*Titre Input Pamplemousse*/
 .commander #gallery-1-19{
-   padding-right: 50%;
-   bottom: -440px;
+   bottom: 130px;
 }
 
-/*Titre Input Framboise BR supprimé*/
-.commander #gallery-1-34 > br:nth-child(1){
-   display: none;
+.commander .input > p:nth-child(2) > span:nth-child(3) > input:nth-child(1){
+   bottom: 780px;
+  position: relative;
+  right: 5px;
 }
 
 /*Titre Input Framboise*/
 .commander #gallery-1-34{
-   padding-right: 70%;
-   bottom: -342px;
+   bottom: 130px;
+}
+
+.commander .input > p:nth-child(3) > span:nth-child(3) > input:nth-child(1){
+   bottom: 580px;
+  position: relative;
+  right: 5px;
 }
 
 /*Titre Input Citron*/
 .commander #gallery-1-18{
-   padding-right: 50%;
-   bottom: -260px;
+   bottom: 130px;
+}
+
+.commander .input > p:nth-child(4) > span:nth-child(3) > input:nth-child(1){
+   bottom: 390px;
+  position: relative;
+  right: 5px;
 }
 
 /*Taille formulaire*/
